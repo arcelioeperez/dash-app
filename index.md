@@ -2,7 +2,7 @@
 [Internship 2020 Website](https://my-internship-app.herokuapp.com/)  
 
 # Download pdf file 
-<a target = "_blank" href="./InternshipSchedule.pdf"> View of download here </a>
+<a target = "_blank" href="source/InternshipSchedule.pdf"> View of download here </a>
 
 # Requirements.txt file  
-<a href="./requirements.txt" download> Download here </a>  
+<a href="source/requirements.txt" download> Download here </a>  
