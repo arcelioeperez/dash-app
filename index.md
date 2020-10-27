@@ -36,7 +36,7 @@ pip install -r requirements.txt
 
 
 ### Download files    
-#### Download pdf file: <a target = "_blank" href="source/InternshipSchedule.pdf"> click here </a>    
+#### Download pdf file: <a target = "_blank" href="source/InternshipRequirements.pdf"> click here </a>    
 #### Requirements.txt file: <a href="source/requirements.txt" download> click here </a>     
 
 
