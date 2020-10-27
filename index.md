@@ -5,7 +5,7 @@
 [Internship 2020 Website](https://my-internship-app.herokuapp.com/) 
 
 ### App Demo 
-[App GIF](demo/my-dash-app.gif)
+![App GIF](demo/my-dash-app.gif)
 
 ### Running the app - once the website folder has been downloaded and unzipped  
 ```python 
