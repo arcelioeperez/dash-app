@@ -1,4 +1,4 @@
-layout: page 
+id: intro
 title: Index
 ---
 
