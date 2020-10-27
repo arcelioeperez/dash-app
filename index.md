@@ -4,6 +4,9 @@
 ### Heroku Dash app website  
 [Internship 2020 Website](https://my-internship-app.herokuapp.com/) 
 
+### App Demo 
+[App GIF](demo/my-dash-app.gif)
+
 ### Running the app - once the website folder has been downloaded and unzipped  
 ```python 
 # Go to the folder by typing 
@@ -30,4 +33,5 @@ pip install -r requirements.txt
 2.[Machine Learning Mastery - Huber Regressor](https://machinelearningmastery.com/robust-regression-for-machine-learning-in-python/#:~:text=Regression%20is%20a%20modeling%20task,most%20successful%20being%20linear%20regression.)  
 3.[Plotly](https://plotly.com/)  
 4.[Dash](https://dash.plotly.com/)  
-5.[Dataset Kaggle - Insurance Charges by Miri Choi](https://www.kaggle.com/mirichoi0218/insurance)
+5.[Dataset Kaggle - Insurance Charges by Miri Choi](https://www.kaggle.com/mirichoi0218/insurance)  
+6.[Screeen to GIF - to generate the demo](https://www.screentogif.com/)
