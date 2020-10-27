@@ -1,7 +1,4 @@
 
-layout: default
----
-
 # Internship - The GreatFull Plate 2020  
 ## Author: Arcelio E. Perez  
 
