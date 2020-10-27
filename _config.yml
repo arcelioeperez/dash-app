@@ -1,3 +1,8 @@
 theme: jekyll-theme-slate
 show_downloads: true
-
+navbar-links:
+  About Me: ""
+  Resources:
+    - Beautiful Jekyll: "https://beautifuljekyll.com"
+    - Learn markdown: "https://www.markdowntutorial.com/"
+  Author's home: "https://github.com/arcelioeperez/dash-app/tree/gh-pages"
