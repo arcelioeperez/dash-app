@@ -13,19 +13,17 @@ cd foldername
 ``` 
 python app.py
 ```  
-### This will render the localhost address, this address can then be opened in the browser of choice  
+#### This will render the localhost address, this address can then be opened in the browser of choice (i.e. http://127.0.0.1:8050/) 
 
-### **Note** if you do not have the required packages you must type this in your command prompt (or Git), Terminal (MacOS)  
+#### **Note:** if you do not have the required packages you must type this in your command prompt (or Git), Terminal (MacOS)  
 ``` 
 pip install -r requirements.txt
 ```  
 #### *requirements.txt* contains all the libraries and dependencies needed to run **app.py**  
 
 ### Download files    
-#### Download pdf file   
-<a target = "_blank" href="source/InternshipSchedule.pdf"> View of download here </a>  
-#### Requirements.txt file   
-<a href="source/requirements.txt" download> Download here </a>   
+#### Download pdf file <a target = "_blank" href="source/InternshipSchedule.pdf"> View of download here </a>    
+#### Requirements.txt file <a href="source/requirements.txt" download> Download here </a>     
 
 ### Works Cited  
 1.[Machine Learning Mastery - Random Forest](https://machinelearningmastery.com/random-forest-ensemble-in-python/)  
