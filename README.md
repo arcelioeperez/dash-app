@@ -21,7 +21,7 @@ pip install -r requirements.txt
 ```  
 #### *requirements.txt* contains all the libraries and dependencies needed to run **app.py**  
 #### View the requirements.txt file here: [view](https://raw.githubusercontent.com/arcelioeperez/dash-app/main/assets/requirements.txt)  
-#### Download the requirements.txt file here: <a href="/requirements.txt" download= "requirements.txt">requirements.txt</a>  
+#### Download the requirements.txt file here: <a href="/requirements.txt">requirements.txt</a>  
 
 
 ### Works Cited  
