@@ -4,5 +4,5 @@ navbar-links:
   About Me: "aboutme"
   Resources:
     - Beautiful Jekyll: /index.md
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+    - Report: "/report.md"
+
