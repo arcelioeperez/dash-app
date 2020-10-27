@@ -5,18 +5,18 @@
 [Internship 2020 Website](https://my-internship-app.herokuapp.com/) 
 
 ### Running the app - once the website folder has been downloaded and unzipped  
-``` 
-# Go to the folder typing 
+```python 
+# Go to the folder by typing 
 cd foldername 
 ```  
 ### To run the file that contains the dash app, in this case **app.py**  
-``` 
+```python
 python app.py
 ```  
 #### This will render the localhost address, this address can then be opened in the browser of choice - i.e. http://127.0.0.1:8050/
 
 #### **Note:** if you do not have the required packages you must type this in your command prompt (or Git), Terminal (MacOS)  
-``` 
+```python
 pip install -r requirements.txt
 ```  
 #### *requirements.txt* contains all the libraries and dependencies needed to run **app.py**  
