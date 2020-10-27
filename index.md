@@ -5,4 +5,4 @@
 <a target = "_blank" href="./InternshipSchedule.pdf"> View of download here </a>
 
 # Requirements.txt file  
-<a href="" download> Download here </a>  
+<a href="./requirements.txt" download> Download here </a>  
