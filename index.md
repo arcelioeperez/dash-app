@@ -25,8 +25,8 @@ pip install -r requirements.txt
 #### *requirements.txt* contains all the libraries and dependencies needed to run **app.py**  
 
 ### Download files    
-#### Download pdf file <a target = "_blank" href="source/InternshipSchedule.pdf"> View of download here </a>    
-#### Requirements.txt file <a href="source/requirements.txt" download> Download here </a>     
+#### Download pdf file <a target = "_blank" href="source/InternshipSchedule.pdf"> click here </a>    
+#### Requirements.txt file <a href="source/requirements.txt" download> click here </a>     
 
 ### Works Cited  
 1.[Machine Learning Mastery - Random Forest](https://machinelearningmastery.com/random-forest-ensemble-in-python/)  
