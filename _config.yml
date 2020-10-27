@@ -1,8 +1,11 @@
 theme: jekyll-theme-slate
 show_downloads: true
-navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: /index.md
-    - Report: "/report.md"
+navbar:
+  title: "Group 19"
+  left:
+    - text: "Home"
+      href: index.md
+    - text: "Report"
+      href: report.md
+
 
