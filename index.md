@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Home
 ---
 # Internship - The GreatFull Plate 2020  
