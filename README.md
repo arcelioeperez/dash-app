@@ -4,6 +4,23 @@
 ### URL for the Heroku app: [click here](https://my-internship-app.herokuapp.com/)
 ### URL for the Github website (contains the links, pdf, and files needed for this project): [click here](https://arcelioeperez.github.io/dash-app/)  
 
+### Running the app - once the website folder has been downloaded and unzipped  
+``` 
+# Go to the folder typing 
+cd foldername 
+```  
+### To run the file that contains the dash app, in this case **app.py**  
+``` 
+python app.py
+```  
+### This will render the localhost address, this address can then be opened in the browser of choice  
+
+### **Note** if you do not have the required packages you must type this in your command prompt (or Git), Terminal (MacOS)  
+``` 
+pip install -r requirements.txt
+```  
+#### *requirements.txt* contains all the libraries and dependencies needed to run **app.py**  
+#### Download the requirements.txt file here: [download]()
 
 ### Works Cited  
 1.[Machine Learning Mastery - Random Forest](https://machinelearningmastery.com/random-forest-ensemble-in-python/)  
