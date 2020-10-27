@@ -23,6 +23,7 @@ pip install -r requirements.txt
 #### View the requirements.txt file here: [view](https://raw.githubusercontent.com/arcelioeperez/dash-app/main/assets/requirements.txt)  
 #### Download the requirements.txt file here: <a href="" download>requirements.txt</a>  
 
+### **If you want to fork or clone the directory feel free to do so. From the Github URL there are two download buttons for .zip files and .tgz (for Unix or Linux Systems).**  
 
 ### Works Cited  
 1.[Machine Learning Mastery - Random Forest](https://machinelearningmastery.com/random-forest-ensemble-in-python/)  
