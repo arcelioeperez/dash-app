@@ -5,7 +5,7 @@
 ### URL for the Github website (contains the links, pdf, and files needed for this project): [click here](https://arcelioeperez.github.io/dash-app/)  
 
 ### App Demo 
-
+![Demo GIF](demo/my-dash-app.gif)
 
 ### Running the app - once the website folder has been downloaded and unzipped  
 ``` 
