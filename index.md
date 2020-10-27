@@ -13,7 +13,7 @@ cd foldername
 ``` 
 python app.py
 ```  
-#### This will render the localhost address, this address can then be opened in the browser of choice (i.e. http://127.0.0.1:8050/) 
+#### This will render the localhost address, this address can then be opened in the browser of choice - i.e. http://127.0.0.1:8050/
 
 #### **Note:** if you do not have the required packages you must type this in your command prompt (or Git), Terminal (MacOS)  
 ``` 
