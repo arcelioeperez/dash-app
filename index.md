@@ -1,13 +1,35 @@
 # Internship - The GreatFull Plate 2020  
 ## Author: Arcelio E. Perez  
 
-
-
 ### Heroku Dash app website  
-[Internship 2020 Website](https://my-internship-app.herokuapp.com/)  
+[Internship 2020 Website](https://my-internship-app.herokuapp.com/) 
+
+### Running the app - once the website folder has been downloaded and unzipped  
+``` 
+# Go to the folder typing 
+cd foldername 
+```  
+### To run the file that contains the dash app, in this case **app.py**  
+``` 
+python app.py
+```  
+### This will render the localhost address, this address can then be opened in the browser of choice  
+
+### **Note** if you do not have the required packages you must type this in your command prompt (or Git), Terminal (MacOS)  
+``` 
+pip install -r requirements.txt
+```  
+#### *requirements.txt* contains all the libraries and dependencies needed to run **app.py**  
 
 ### Download files    
 #### Download pdf file   
 <a target = "_blank" href="source/InternshipSchedule.pdf"> View of download here </a>  
 #### Requirements.txt file   
 <a href="source/requirements.txt" download> Download here </a>   
+
+### Works Cited  
+1.[Machine Learning Mastery - Random Forest](https://machinelearningmastery.com/random-forest-ensemble-in-python/)  
+2.[Machine Learning Mastery - Huber Regressor](https://machinelearningmastery.com/robust-regression-for-machine-learning-in-python/#:~:text=Regression%20is%20a%20modeling%20task,most%20successful%20being%20linear%20regression.)  
+3.[Plotly](https://plotly.com/)  
+4.[Dash](https://dash.plotly.com/)  
+5.[Dataset Kaggle - Insurance Charges by Miri Choi](https://www.kaggle.com/mirichoi0218/insurance)
