@@ -6,4 +6,7 @@ navbar:
   - text: Introduction 
     href: index.md 
   - text: Report 
-    href: report.md
+    href: report.md 
+output: 
+  html_document: 
+  theme: cosmo 
