@@ -20,7 +20,9 @@ python app.py
 pip install -r requirements.txt
 ```  
 #### *requirements.txt* contains all the libraries and dependencies needed to run **app.py**  
-#### Download the requirements.txt file here: [download](https://raw.githubusercontent.com/arcelioeperez/dash-app/main/assets/requirements.txt)
+#### View the requirements.txt file here: [view](https://raw.githubusercontent.com/arcelioeperez/dash-app/main/assets/requirements.txt)  
+#### Download the requirements.txt file here: <a href="https://github.com/arcelioeperez/dash-app/blob/main/assets/requirements.txt">requirements.txt</a>  
+
 
 ### Works Cited  
 1.[Machine Learning Mastery - Random Forest](https://machinelearningmastery.com/random-forest-ensemble-in-python/)  
