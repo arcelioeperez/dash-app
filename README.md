@@ -34,4 +34,4 @@ pip install -r requirements.txt
 3.[Plotly](https://plotly.com/)  
 4.[Dash](https://dash.plotly.com/)  
 5.[Dataset Kaggle - Insurance Charges by Miri Choi](https://www.kaggle.com/mirichoi0218/insurance)  
-6.[ScreenToGIF - to generate the GIF](https://www.screentogif.com/)  
+6.[ScreenToGIF - to generate the demo](https://www.screentogif.com/)  
