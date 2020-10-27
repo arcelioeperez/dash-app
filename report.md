@@ -1,4 +1,4 @@
 ---
-title: report
+title: Report
 ---
 # Hello
