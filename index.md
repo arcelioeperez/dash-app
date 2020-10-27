@@ -37,5 +37,5 @@ pip install -r requirements.txt
 3.[Plotly](https://plotly.com/)  
 4.[Dash](https://dash.plotly.com/)  
 5.[Dataset Kaggle - Insurance Charges by Miri Choi](https://www.kaggle.com/mirichoi0218/insurance)  
-6.[Screeen to GIF - to generate the demo](https://www.screentogif.com/)
+6.[Screeen to GIF - to generate the demo](https://www.screentogif.com/)  
 7.[Adding Menu Bar](https://dh.obdurodon.org/jekyll.xhtml) 
