@@ -1,5 +1,5 @@
-id: intro
-title: Index
+---
+layout: default
 ---
 
 # Internship - The GreatFull Plate 2020  
