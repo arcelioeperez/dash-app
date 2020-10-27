@@ -1,13 +1,5 @@
-name: "dash-app"
 theme: jekyll-theme-slate
 show_downloads: true
-navbar:
-  title: "Internship"
-  left:
-  - text: Introduction 
-    href: index.md 
-  - text: Report 
-    href: report.md 
-output: 
-  html_document: 
-  theme: cosmo 
+header_pages: 
+  index.md 
+  readme.md
