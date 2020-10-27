@@ -2,7 +2,7 @@
 # Author: Arcelio E. Perez
 
 # Please go to the gh-pages branch 
-## URL to that branch: [click here](https://github.com/arcelioeperez/dash-app/tree/gh-pages) 
+## URL to that branch:[click here](https://github.com/arcelioeperez/dash-app/tree/gh-pages) 
 
-## URL for the Heroku app: [click here](https://my-internship-app.herokuapp.com/)
-## URL for the Github website (contains the links, pdf, and files needed for this project): [click here](https://arcelioeperez.github.io/dash-app/) 
+## URL for the Heroku app:[click here](https://my-internship-app.herokuapp.com/)
+## URL for the Github website (contains the links, pdf, and files needed for this project):[click here](https://arcelioeperez.github.io/dash-app/) 
