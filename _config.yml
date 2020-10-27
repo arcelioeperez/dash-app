@@ -1,2 +1,9 @@
 theme: jekyll-theme-slate
 show_downloads: true
+navbar:
+  title: Internship
+  left:
+  - text: Introduction 
+    href: index.md 
+  - text: Report 
+    href: report.md
