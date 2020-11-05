@@ -44,4 +44,47 @@ def update_graph(selected_dropdown):
     return figure3
 ```  
 
-# Random Forest
+# Random Forest  
+## What is a Random Forest?  
+>
+>"Random Forests grow many classification trees. \[...] Each tree gives a classification, and we say the tree 'votes' for that class. The forest chooses the classification having the most votes (over all the trees in the forest)." - [Breiman and Cutler](https://www.stat.berkeley.edu/~breiman/RandomForests/cc_home.htm)
+>  
+
+## Code used to generate the model:  
+```python
+def get_models(): 
+    models = dict() 
+    #exploting ratios from 10% to 100% 
+    for i in arange(0.1, 1.1, 0.1): 
+        key = "%.1f" % i 
+        #setting the max samples to none 
+        if i == 1.0: 
+            i = None 
+        models[key] = RandomForestRegressor(max_samples = i)
+    return models 
+
+def evaluate_model(model, x, y): 
+    #defining the evaluation procedure 
+    cv = RepeatedKFold(n_splits = 10, n_repeats = 3, random_state = 1) 
+    #scores = cross_val_score(model, dataX, dataY, scoring = "neg_mean_absolute_error", cv = cv, n_jobs = 1, error_score = "raise")
+    scores = cross_val_score(model, dataX, dataY, scoring = "neg_mean_squared_error", cv = cv, n_jobs = 1, error_score = "raise")
+
+    return np.absolute(scores) 
+
+models = get_models() 
+results, names = list(), list() 
+
+for name, model in models.items(): 
+    #evaluate the model 
+    scores = evaluate_model(model, dataX, dataY) 
+    #storing the results 
+    results.append(scores) 
+    names.append(name) 
+    #summarizing the performance 
+    #print("Mean MAE scores and STD", name, mean(scores), std(scores)) 
+    print("RMSE scores and STD", name, mean(np.sqrt(scores)))
+
+plt.boxplot(results, labels = names, showmeans = True) 
+plt.show()
+```
+
