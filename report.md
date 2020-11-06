@@ -13,6 +13,10 @@ Region: southwest (3), southeast (2), northwest (1), northeast (0)
 ## Code to generate the chart on the website:  
 *note: this was generated in the `app.py` program*  
 
+## Linear Regression summary (using the 'statsmodels.api' module):  
+[Summary](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/source/regression_stats.txt)  
+
+
 ``` python
 def update_graph(selected_dropdown):
     
