@@ -12,12 +12,6 @@ Region: southwest (3), southeast (2), northwest (1), northeast (0)
 
 ## Code to generate the chart on the website:  
 *note: this was generated in the `app.py` program*  
-
-## Linear Regression summary (using the 'statsmodels.api' module):  
-[Script Used to Generate the Summary](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/source/p_values.py)  
-[Summary](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/source/regression_stats.txt)  
-
-
 ``` python
 def update_graph(selected_dropdown):
     
@@ -51,6 +45,15 @@ def update_graph(selected_dropdown):
         y=y_range, name = "Regression Fit"))
     return figure3
 ```  
+## Linear Regression Summary (using the 'statsmodels.api' module):  
+[Script Used to Generate the Summary](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/source/p_values.py)  
+[Summary](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/source/regression_stats.txt)  
+
+## What is a Linear Regression?  
+>"Simple linear regression lives up to its name: it is a very straightforward simple linear
+>approach for predicting a quantitative response Y on the basis of a single predictor varible X" [ISLR - James, Witten, Hastie, and Tibshirani](http://faculty.marshall.usc.edu/gareth-james/ISL/)  
+
+
 
 # Random Forest  
 ## What is a Random Forest?  
