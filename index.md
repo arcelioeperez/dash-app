@@ -4,7 +4,7 @@ title: Home
 # Internship - The GreatFull Plate 2020  
 ## Author: Arcelio E. Perez  
 
-## *WEBSITE UNDER CONSTRUCTION*
+### *\*WEBSITE UNDER CONSTRUCTION*\*
 
 ### Heroku Dash app website  
 [Internship 2020 Website](https://my-internship-app.herokuapp.com/) 
