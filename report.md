@@ -35,13 +35,15 @@ def update_graph(selected_dropdown):
         dfx = dfx.reshape(-1,1)
         
         #results = evaluate_model(dfx, dataY, model)
-        #print("MAE (mean) and MAE (stdev): ", np.mean(results), np.std(results)) 
+        #print("MAE (mean) and MAE (stdev): ", np.mean(results), 
+        np.std(results)) 
         model = HuberRegressor() 
         model.fit(dfx, df["charges"])
         x_range = np.linspace(dfx.min(), dfx.max(), 100) 
         y_range = model.predict(x_range.reshape(-1,1))
         figure3 = px.scatter(data,x=df[f"{i}"], y=df["charges"])
-        figure3.add_traces(go.Scatter(x=x_range, y=y_range, name = "Regression Fit"))
+        figure3.add_traces(go.Scatter(x=x_range, 
+        y=y_range, name = "Regression Fit"))
     return figure3
 ```  
 
@@ -66,11 +68,14 @@ def get_models():
 
 def evaluate_model(model, x, y): 
     #defining the evaluation procedure 
-    cv = RepeatedKFold(n_splits = 10, n_repeats = 3, random_state = 1) 
+    cv = RepeatedKFold(n_splits = 10, n_repeats = 3, 
+    random_state = 1) 
     #scores = cross_val_score(model, dataX, dataY, 
-    scoring = "neg_mean_absolute_error", cv = cv, n_jobs = 1, error_score = "raise")
+    scoring = "neg_mean_absolute_error", 
+    cv = cv, n_jobs = 1, error_score = "raise")
     scores = cross_val_score(model, dataX, dataY, 
-    scoring = "neg_mean_squared_error", cv = cv, n_jobs = 1, error_score = "raise")
+    scoring = "neg_mean_squared_error", 
+    cv = cv, n_jobs = 1, error_score = "raise")
 
     return np.absolute(scores) 
 
@@ -84,8 +89,10 @@ for name, model in models.items():
     results.append(scores) 
     names.append(name) 
     #summarizing the performance 
-    #print("Mean MAE scores and STD", name, mean(scores), std(scores)) 
-    print("RMSE scores and STD", name, mean(np.sqrt(scores)))
+    #print("Mean MAE scores and STD", 
+    name, mean(scores), std(scores)) 
+    print("RMSE scores and STD", name, 
+    mean(np.sqrt(scores)))
 
 plt.boxplot(results, labels = names, showmeans = True) 
 plt.show()
