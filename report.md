@@ -16,7 +16,8 @@ Region: southwest (3), southeast (2), northwest (1), northeast (0)
 ``` python
 def update_graph(selected_dropdown):
     
-    #dropdown = {'Age':'age', 'Sex':'sex', 'BMI':'bmi', 'Children':'children','Smoker':'smoker', 'Region':'region'}
+    #dropdown = {'Age':'age', 'Sex':'sex', 'BMI':'bmi', 
+    'Children':'children','Smoker':'smoker', 'Region':'region'}
     for i in selected_dropdown: 
         if i == "age": 
             dfx = df["age"]
@@ -66,8 +67,10 @@ def get_models():
 def evaluate_model(model, x, y): 
     #defining the evaluation procedure 
     cv = RepeatedKFold(n_splits = 10, n_repeats = 3, random_state = 1) 
-    #scores = cross_val_score(model, dataX, dataY, scoring = "neg_mean_absolute_error", cv = cv, n_jobs = 1, error_score = "raise")
-    scores = cross_val_score(model, dataX, dataY, scoring = "neg_mean_squared_error", cv = cv, n_jobs = 1, error_score = "raise")
+    #scores = cross_val_score(model, dataX, dataY, 
+    scoring = "neg_mean_absolute_error", cv = cv, n_jobs = 1, error_score = "raise")
+    scores = cross_val_score(model, dataX, dataY, 
+    scoring = "neg_mean_squared_error", cv = cv, n_jobs = 1, error_score = "raise")
 
     return np.absolute(scores) 
 
