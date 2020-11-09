@@ -112,4 +112,4 @@ plt.show()
 [MAE-Random Forest](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/source/random_forest_mae.txt) | [RMSE-Random Forest](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/source/random_forest_rmse.txt)  
 
 
-![Random Forest MAE plot](demo/randomforest.png)
+![Random Forest MAE plot](demo/randomforest.PNG)
