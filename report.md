@@ -111,5 +111,8 @@ plt.show()
 ## Random Forest Results  
 [MAE-Random Forest](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/source/random_forest_mae.txt) | [RMSE-Random Forest](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/source/random_forest_rmse.txt)  
 
+### MAE Plot
+![Random Forest MAE plot](demo/randomforest.PNG)  
 
-![Random Forest MAE plot](demo/randomforest.PNG)
+### RMSE Plot
+![Random Forest RMSE plot](demo/randomforestrmse.PNG)  
