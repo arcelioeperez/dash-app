@@ -114,5 +114,5 @@ plt.show()
 ### MAE Plot
 ![Random Forest MAE plot](demo/randomforest.PNG)  
 
-### RMSE Plot
+### MSE Plot
 ![Random Forest RMSE plot](demo/randomforestrmse.PNG)  
