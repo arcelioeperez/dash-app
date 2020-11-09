@@ -7,7 +7,7 @@ title: Home
 ### *\*WEBSITE UNDER CONSTRUCTION*\*
 
 ### [LICENSE](https://raw.githubusercontent.com/arcelioeperez/dash-app/add-license-1/LICENSE)  
-
+![License](demo/license.PNG)  
 ### Heroku Dash app website  
 [Internship 2020 Website](https://my-internship-app.herokuapp.com/) 
 
