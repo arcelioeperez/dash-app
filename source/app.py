@@ -50,6 +50,80 @@ app.layout = html.Div([
     html.H4("*WEBSITE UNDER CONSTRUCTION*", style = {"textAlign":"center", "width": "800px", "font-family":"Verdana"}, className = "container"),
     #tabs 
     dcc.Tabs(id = "tabs", children = [
+        dcc.Tab(label = "How To", children = [
+            html.Div([
+                html.H1("How To Run The Files?", style = {"textAlign": "center", "font-family":"Verdana"}), 
+                dcc.Markdown('''
+                ## Files to Download:  
+                 
+                Required files: [insurance.csv](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/source/insurance.csv) | [requirements.txt](https://raw.githubusercontent.com/arcelioeperez/dash-app/main/assets/requirements.txt) | [app.py](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/source/app.py).   
+                All in one folder - including Makefile: [Files](https://github.com/arcelioeperez/dash-app/tree/gh-pages/source)  
+                Optional - only the makefile: [Makefile](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/source/makefile)  
+                
+                GitHub:  
+                [GitHub Repository](https://github.com/arcelioeperez/dash-app/tree/gh-pages) | [GitHub Pages](https://arcelioeperez.github.io/dash-app/)
+
+                ## Running on Windows:  
+
+                ### Running with Make:  
+                If you don't have Make installed you could install it by downloading it on this [website](http://gnuwin32.sourceforge.net/packages/make.htm).  
+                You could also download and install 'Chocolatey', which is a package manager for Windows.
+
+                **Please use a Unix-like terminal like Git Bash or Powershell - it makes running programs easier**  
+
+                ```
+                #installing Make with Chocolatey 
+                choco install make
+                ```  
+                Running the *app.py* file with *make*:  
+                ```
+                #installing all the packages with one command
+                make packages
+                #then running the app.py file
+                make app
+                ```  
+                ### If you don't want to use Make:
+                ```
+                #installing all the packages with requirements.txt
+                pip install -r requirements.txt
+                #then running app.py
+                python app.py
+                ```  
+                >*After running the above commands - either with or without make - you must go the localhost link i.e. http://127.0.0.1:8050/*   
+
+                ## Running on MacOS  
+
+                ### Running with Make:  
+                Open the terminal and check if you have *make* installed
+                ```
+                make --version
+                ```  
+                *If you don't have it installed, you can install it with Homebrew - a package manager for MacOS*
+
+                ### Installing *make* with Brew
+                ```
+                brew install make
+                ```  
+                **The rest is similar to the Windows instructions.** 
+
+                **Note: all the files must be in the same directory (folder) and all the packages must be installed prior to running `app.py`.**
+                
+                ### Links to the plotly and dash documentations:  
+                1.[Plotly](https://plotly.com/)  
+                2.[Dash](https://dash.plotly.com/)  
+                3.[Kaggle Dataset- Medical Cost Personal Datasets by Miri Choi](https://www.kaggle.com/mirichoi0218/insurance)  
+
+                ### Works Cited:  
+                1.[Machine Learning Mastery - Random Forest](https://machinelearningmastery.com/random-forest-ensemble-in-python/)  
+                2.[Machine Learning Mastery - Huber Regressor](https://machinelearningmastery.com/robust-regression-for-machine-learning-in-python/#:~:text=Regression%20is%20a%20modeling%20task,most%20successful%20being%20linear%20regression.)  
+                3.[Scatter Plots](https://www.evl.uic.edu/aej/524/kyoung/Training-scatterplot.html)
+
+                ### Books Recommended: 
+                1.[Fooled by Randomness, Nassim Nicholas Taleb](https://www.amazon.com/Fooled-Randomness-Hidden-Markets-Incerto/dp/0812975219)
+                
+                ''', style={"font-family":"Verdana"}, className = "container", highlight_config={"theme":"dark"})
+            ])
+        ],style = {"font-family": "Verdana"}),
         dcc.Tab(label = "Data Exploration", children = [
             html.Div([ 
                 html.H1("Scatter Matrix",style = {"textAlign": "center", "font-family":"Verdana"}), 
@@ -115,29 +189,10 @@ app.layout = html.Div([
 
                 ''', style={"font-family":"Verdana"}, className = "container", highlight_config={"theme":"dark"}),
                 html.H1("Histogram of Charges by Region", style = {"textAlign": "center", "font-family":"Verdana"}),
-                dcc.Graph(figure = fig2), 
-                dcc.Markdown(''' 
-                #### Links to the plotly and dash documentations:  
-                1.[Plotly](https://plotly.com/)  
-                2.[Dash](https://dash.plotly.com/)  
-                3.[Kaggle Dataset- Medical Cost Personal Datasets by Miri Choi](https://www.kaggle.com/mirichoi0218/insurance)  
-
-                #### Links to files used for this project:  
-                1.[Internship Requirements PDF](https://arcelioeperez.github.io/dash-app/source/InternshipRequirements.pdf)  
-                2.[Requirements.txt file](https://raw.githubusercontent.com/arcelioeperez/dash-app/main/assets/requirements.txt)  
-                3.[Insurance Charges CSV files](https://raw.githubusercontent.com/arcelioeperez/dash-app/main/assets/insurance.csv)  
-
-                #### Works Cited:  
-                1.[Machine Learning Mastery - Random Forest](https://machinelearningmastery.com/random-forest-ensemble-in-python/)  
-                2.[Machine Learning Mastery - Huber Regressor](https://machinelearningmastery.com/robust-regression-for-machine-learning-in-python/#:~:text=Regression%20is%20a%20modeling%20task,most%20successful%20being%20linear%20regression.)  
-                3.[Scatter Plots](https://www.evl.uic.edu/aej/524/kyoung/Training-scatterplot.html)
-
-                #### Books Recommended: 
-                1.[Fooled by Randomness, Nassim Nicholas Taleb](https://www.amazon.com/Fooled-Randomness-Hidden-Markets-Incerto/dp/0812975219/ref=sr_1_2?dchild=1&keywords=fooled+by+randomness&qid=1603742543&sr=8-2)
-                ''', style={"font-family":"Verdana"}, className = "container", highlight_config={"theme":"dark"})
+                dcc.Graph(figure = fig2)
                 
             ], className = "container"),
-        ]),
+        ],style = {"font-family": "Verdana"}),
         dcc.Tab(label = "Perfomance Metrics" , children = [
             html.H1("Linear Regression Metrics", style = {"textAlign": "center", "font-family":"Verdana"}),
             dcc.Dropdown(id='my-dropdown', 
@@ -242,16 +297,21 @@ app.layout = html.Div([
             For this model I decided to include two error metrics - RMSE (Root Mean Squared Error) and MAE (Mean Squared Error). RMSE tends to penalize bigger errors, 
             therefore when MAEs for a given problem tend to be the same, the RMSE could be a factor deciding which is the 'best' model - or at least the one that fits
             the problem.  
+
             Since we are dealing with insurance charges, I opted to include both and use the RMSE as the benchmark.  
             
             These files contain the MAE (mean and standard deviation) and the RMSE from the random forest model:  
-            [MAE-Random Forest](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/source/random_forest_mae.txt)  
-            [RMSE-Random Forest](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/source/random_forest_rmse.txt)  
-            ''', style={"font-family":"Verdana"}, className = "container", highlight_config={"theme":"dark"})
+
+            [MAE-Random Forest](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/source/random_forest_mae.txt)|[RMSE-Random Forest](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/source/random_forest_rmse.txt)  
+            ## MAE Plot  
+            ![MAE Plot](https://github.com/arcelioeperez/dash-app/raw/gh-pages/demo/randomforest.PNG)
+            ## RMSE Plot  
+            ![RMSE Plot](https://github.com/arcelioeperez/dash-app/raw/gh-pages/demo/randomforestrmse0.PNG)
+            ''', style={"font-family":"Verdana"}, className = "container", highlight_config={"theme":"dark"})   
 
      ])
  
-    ])
+    ],style = {"font-family": "Verdana"})
    
 
 ])
