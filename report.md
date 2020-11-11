@@ -51,7 +51,7 @@ def update_graph(selected_dropdown):
 
 ## What is a Linear Regression?  
 >"Simple linear regression lives up to its name: it is a very straightforward simple linear
->approach for predicting a quantitative response Y on the basis of a single predictor varible X" [ISLR - James, Witten, Hastie, and Tibshirani](http://faculty.marshall.usc.edu/gareth-james/ISL/)  
+>approach for predicting a quantitative response Y on the basis of a single predictor varible X" - [ISLR - James, Witten, Hastie, and Tibshirani](http://faculty.marshall.usc.edu/gareth-james/ISL/)  
 
 Mathematical Formula:  
 <a href="https://www.codecogs.com/eqnedit.php?latex=Y&space;\approx&space;\beta_{0}&space;&plus;&space;\beta_{1}&space;X" target="_blank"><img src="https://latex.codecogs.com/png.latex?Y&space;\approx&space;\beta_{0}&space;&plus;&space;\beta_{1}&space;X" title="Y \approx \beta_{0} + \beta_{1} X" /></a>  
