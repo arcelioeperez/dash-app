@@ -107,6 +107,7 @@ for name, model in models.items():
 plt.boxplot(results, labels = names, showmeans = True) 
 plt.show()
 ```  
+[Citation - Machine Learning Mastery](https://machinelearningmastery.com/random-forest-ensemble-in-python/)  
 
 ## Random Forest Results  
 [MAE-Random Forest](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/source/random_forest_mae.txt) | [RMSE-Random Forest](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/source/random_forest_rmse.txt)  
