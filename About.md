@@ -91,7 +91,7 @@ Current Home Directory:
 ```
 ~/
 #for example, going to the *app* directory from the *xyz* directory 
-cd ~/xyz
+cd ~/app
 ```  
 Going to the previous directory:  
 ```
@@ -110,7 +110,7 @@ pip install -r requirements.txt
 #or 
 make packages
 ```    
-#### *requirements.txt* contains all the libraries and dependencies needed to run **app.py**  - also, as explained above, the Makefile contains the 'make packages' which runs the `pip install -r requirements.txt` command  
+requirements.txt* contains all the libraries and dependencies needed to run **app.py**  - also, as explained above, the Makefile contains the 'make packages' which runs the `pip install -r requirements.txt` command  
 
 ### Works Cited:    
 1.[Machine Learning Mastery - Random Forest](https://machinelearningmastery.com/random-forest-ensemble-in-python/)  
