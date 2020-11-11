@@ -2,13 +2,60 @@
 title: About
 ---  
 
-# How To Run The Files?  
+## Files to Download:  
+Required files: [insurance.csv](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/source/insurance.csv) | [requirements.txt](https://raw.githubusercontent.com/arcelioeperez/dash-app/main/assets/requirements.txt) | [app.py](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/source/app.py)  
 
-## Running on Windows  
+All in one folder - including Makefile: [Files](https://github.com/arcelioeperez/dash-app/tree/gh-pages/source)    
+Optional - only the makefile: [Makefile](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/source/makefile)  
+             
+GitHub:   
+[GitHub Repository](https://github.com/arcelioeperez/dash-app/tree/gh-pages) | [GitHub Pages](https://arcelioeperez.github.io/dash-app/)  
+## Running on Windows:   
+### Running with Make:  
+If you don't have Make installed you could install it by downloading it on this [website](http://gnuwin32.sourceforge.net/packages/make.htm)  
+You could also download and install 'Chocolatey', which is a package manager for Windows.  
 
+**Please use a Unix-like terminal like Git Bash or Powershell - it makes running programs easier**  
+```
+#installing Make with Chocolatey 
+choco install make 
+```  
 
+Running the *app.py* file with *make*:  
+```
+#installing all the packages with one command
+make packages
+#then running the app.py file
+make app
+```  
+
+### If you don't want to use Make:  
+```
+#installing all the packages with requirements.txt
+pip install -r requirements.txt
+#then running app.py
+python app.py
+```  
+
+>*After running the above commands - either with or without make - you must go the localhost link i.e. http://127.0.0.1:8050/*   
 
 ## Running on MacOS  
+### Running with Make:  
+
+Open the terminal and check if you have *make* installed  
+
+```
+make --version
+```  
+*If you don't have it installed, you can install it with Homebrew - a package manager for MacOS*  
+
+### Installing *make* with Brew   
+```
+brew install make
+```   
+
+**\*The rest is similar to the Windows instructions.\***  
+**Note: all the files must be in the same directory (folder) and all the packages must be installed prior to running `app.py`.**  
 
 
 
