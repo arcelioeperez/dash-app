@@ -6,7 +6,7 @@ title: About
 Required files: [insurance.csv](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/source/insurance.csv) | [requirements.txt](https://raw.githubusercontent.com/arcelioeperez/dash-app/main/assets/requirements.txt) | [app.py](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/source/app.py)  
 
 All in one folder - including Makefile: [Files](https://github.com/arcelioeperez/dash-app/tree/gh-pages/source)   
-Download the folder: <a href="source/" download> Source Folder <a/>  
+Download the folder: <a href="https://github.com/arcelioeperez/dash-app/tree/gh-pages/source" download> Source Folder <a/>  
 Optional - only the makefile: [Makefile](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/source/makefile)  
              
 GitHub:   
