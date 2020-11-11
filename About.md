@@ -12,8 +12,9 @@ GitHub:
 [GitHub Repository](https://github.com/arcelioeperez/dash-app/tree/gh-pages) | [GitHub Pages](https://arcelioeperez.github.io/dash-app/)  
 ## Running on Windows:   
 ### Running with Make:  
-If you don't have Make installed you could install it by downloading it on this [website](http://gnuwin32.sourceforge.net/packages/make.htm)  
+If you don't have Make installed you could install it by downloading it on this [website](http://gnuwin32.sourceforge.net/packages/make.htm).  
 You could also download and install 'Chocolatey', which is a package manager for Windows.  
+Download Chocolatey: [Chocolatey - Windows Package Manager](https://chocolatey.org/)  
 
 **Please use a Unix-like terminal like Git Bash or Powershell - it makes running programs easier**  
 ```
@@ -50,6 +51,7 @@ make --version
 *If you don't have it installed, you can install it with Homebrew - a package manager for MacOS*  
 
 ### Installing *make* with Brew   
+Download Brew: [Homebrew - MacOS Package Manager](https://brew.sh/)  
 ```
 brew install make
 ```   
