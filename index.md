@@ -41,12 +41,3 @@ pip install -r requirements.txt
 #### Download pdf file: <a target = "_blank" href="source/InternshipRequirements.pdf"> click here </a>    
 #### Requirements.txt file: <a href="source/requirements.txt" download> click here </a>     
 #### app.py - This program contains the Heroku app code: <a target = "_blank" href="source/app.py"> click here </a>  
-
-### Works Cited  
-1.[Machine Learning Mastery - Random Forest](https://machinelearningmastery.com/random-forest-ensemble-in-python/)  
-2.[Machine Learning Mastery - Huber Regressor](https://machinelearningmastery.com/robust-regression-for-machine-learning-in-python/#:~:text=Regression%20is%20a%20modeling%20task,most%20successful%20being%20linear%20regression.)  
-3.[Plotly](https://plotly.com/)  
-4.[Dash](https://dash.plotly.com/)  
-5.[Dataset Kaggle - Insurance Charges by Miri Choi](https://www.kaggle.com/mirichoi0218/insurance)  
-6.[Screeen to GIF - to generate the demo](https://www.screentogif.com/)  
-7.[Adding Menu Bar](https://dh.obdurodon.org/jekyll.xhtml) 
