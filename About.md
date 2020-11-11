@@ -59,6 +59,59 @@ brew install make
 **\*The rest is similar to the Windows instructions.\***  
 **Note: all the files must be in the same directory (folder) and all the packages must be installed prior to running `app.py`.**  
 
+### Overview of Unix Commands
+Once all the files are in one folder:  
+```
+# Go to the folder by typing 
+cd foldername 
+```  
+Listing all the files inside the folder:  
+```
+ls
+```  
+Opening a file with VI or VIM:  
+```
+vi filename
+#or 
+vim filename
+```  
+Renaming file:  
+```
+mv filename newfilename
+```  
+Moving a file to another directory (folder):  
+```
+mv filename nameofthedirectory
+```  
+What is your current directory:  
+```
+pwd
+```  
+Current Home Directory:  
+```
+~/
+#for example, going to the *app* directory from the *xyz* directory 
+cd ~/xyz
+```  
+Going to the previous directory:  
+```
+cd .. 
+```
+Removing (deleting) a file:  
+```
+rm filename
+#or force remove
+rm -rf filename
+```  
+
+#### **Note:** if you do not have the required packages you must type this in your command prompt (or Git), Terminal (MacOS) or Linux Terminal   
+```
+pip install -r requirements.txt
+#or 
+make packages
+```    
+#### *requirements.txt* contains all the libraries and dependencies needed to run **app.py**  - also, as explained above, the Makefile contains the 'make packages' which runs the `pip install -r requirements.txt` command  
+
 ### Works Cited:    
 1.[Machine Learning Mastery - Random Forest](https://machinelearningmastery.com/random-forest-ensemble-in-python/)  
 2.[Machine Learning Mastery - Huber Regressor](https://machinelearningmastery.com/robust-regression-for-machine-learning-in-python/#:~:text=Regression%20is%20a%20modeling%20task,most%20successful%20being%20linear%20regression.)  
