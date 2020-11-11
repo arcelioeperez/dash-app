@@ -14,8 +14,3 @@ title: Home
 ### App Demo 
 ![App GIF](demo/my-dash-app.gif)
 
-
-### Download files    
-#### Download pdf file: <a target = "_blank" href="source/InternshipRequirements.pdf"> click here </a>    
-#### Requirements.txt file: <a href="source/requirements.txt" download> click here </a>     
-#### app.py - This program contains the Heroku app code: <a target = "_blank" href="source/app.py"> click here </a>  
