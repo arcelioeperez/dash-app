@@ -80,9 +80,13 @@ def evaluate_model(model, x, y):
     #defining the evaluation procedure 
     cv = RepeatedKFold(n_splits = 10, n_repeats = 3, 
     random_state = 1) 
-    #scores = cross_val_score(model, dataX, dataY, 
+    '''
+    MAE
+    scores = cross_val_score(model, dataX, dataY, 
     scoring = "neg_mean_absolute_error", 
     cv = cv, n_jobs = 1, error_score = "raise")
+    '''
+    #MSE
     scores = cross_val_score(model, dataX, dataY, 
     scoring = "neg_mean_squared_error", 
     cv = cv, n_jobs = 1, error_score = "raise")
@@ -99,12 +103,27 @@ for name, model in models.items():
     results.append(scores) 
     names.append(name) 
     #summarizing the performance 
-    #print("Mean MAE scores and STD", 
+    '''
+    MAE
+    print("Mean MAE scores and STD", 
     name, mean(scores), std(scores)) 
+    '''
+    #RMSE  - getting the square root of the MSE 
     print("RMSE scores and STD", name, 
     mean(np.sqrt(scores)))
+    
+ans = np.sqrt(results) 
 
-plt.boxplot(results, labels = names, showmeans = True) 
+#converting the ans variable to a list in order to plot it with 
+#the names list - otherwise it won't run 
+
+ans = list(ans)
+
+#ans is only needed to run the RMSE plot 
+#if only running the MAE you don't need the 
+#sqrt() function nor the ans variable
+
+plt.boxplot(ans, labels = names, showmeans = True) 
 plt.show()
 ```  
 [Citation - Machine Learning Mastery](https://machinelearningmastery.com/random-forest-ensemble-in-python/)  
