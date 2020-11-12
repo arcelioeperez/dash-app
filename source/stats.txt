@@ -1,0 +1,26 @@
+The number of females is:  662
+The number of males is:  676
+The number of smokers is:  274
+The number of non-smokers is:  1064
+The number of people in the Southwest is:  325
+The number of people in the Southeast is:  364
+The number of people in the Northwest is:  325
+The number of people in the Northeast is:  324
+The highest value charged was:  63770.42801
+The lowest value charged was: 1121.8739
+The row with the highest charged amount:  age                54
+sex            female
+bmi             47.41
+children            0
+smoker            yes
+region      southeast
+charges       63770.4
+Name: 543, dtype: object
+The row with the lowest charged amount:  age                18
+sex              male
+bmi             23.21
+children            0
+smoker             no
+region      southeast
+charges       1121.87
+Name: 940, dtype: object
