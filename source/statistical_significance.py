@@ -1,10 +1,5 @@
 from exploratory_analysis import data  
 ''' 
-Author: Arcelio E. Perez Garcia
-In this program I will plot the statistical distributions of each of the variables. 
-With these plots I will be able to determine if the variables are significant or not. 
-Then the p-values will be calculated in order to see if they can predict the insurance charges. 
-The final model and consequently an example will prove or disaprove the model. 
 
 *note: to run these files you need to have them in your cwd (current work directory). 
 I will zip all the files in order for it to run. 
@@ -27,11 +22,7 @@ from exploratory_analysis import data
 
 The reason is that we just want to import the data, in this case the csv file 
 that was cleaned and grouped in order to work for linear regression models. 
-
-*** 
-This program was made using the VS Code Text Editor as it is compatible with multiple languages and 
-provides a better intellisense (syntax coloring and autocompletion) that most IDEs and Text Editors
-*** 
+ 
 '''
 
 if __name__  == "__main__": 

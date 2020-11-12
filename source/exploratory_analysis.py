@@ -1,5 +1,5 @@
 '''
-Author: Arcelio E. Perez Garcia 
+
 Data: Keggle, insurance.csv 
 Exploratory Data Analysis: 
 
