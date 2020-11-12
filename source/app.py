@@ -10,12 +10,14 @@ from numpy import arange
 from sklearn.linear_model import HuberRegressor 
 from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import RepeatedKFold
+import dash_table
 
 app = dash.Dash()
 server = app.server
 data = pd.read_csv('insurance.csv')
 
 df = data.copy()
+df2 = data.head(n=5) 
 #Label Encoding the data (sex, smoker, and region variables)
 object_df = data.select_dtypes(include=['object']).copy() 
 #print(object_df.head())
@@ -31,10 +33,12 @@ object_df["region_encoded"] = object_df["region"].cat.codes
 
 df["sex"] = object_df["sex_binary"] 
 df["smoker"] = object_df["smoker_binary"] 
-df["region"] = object_df["region_encoded"] 
+df["region"] = object_df["region_encoded"]
+
+df3 = df.head(n=5) 
 
 fig = px.scatter_matrix(data, dimensions=[
-    'age', 'sex', 'bmi', 'children', 'smoker', 'charges'], labels = {col:" " for col in data.columns},color='region', size_max =10)
+    'age', 'sex', 'bmi', 'children', 'smoker', 'charges'], labels = {col:" " for col in data.columns},color='region', size_max =5)
 fig.update_traces(diagonal_visible = False)
 
 fig2 = px.histogram(data,x = data['charges'], color = 'region')
@@ -124,6 +128,70 @@ app.layout = html.Div([
                 ''', style={"font-family":"Verdana"}, className = "container", highlight_config={"theme":"dark"})
             ])
         ],style = {"font-family": "Verdana"}),
+        dcc.Tab(label = "Data Pre-Processing", children = [
+            html.Div([
+                html.H1("Data Cleaning", style = {"textAlign":"center", "font-family":"Verdana"}),
+                dcc.Markdown('''
+                ### Opening the CSV file with Pandas:  
+                ```python
+                import pandas as pd 
+                data = pd.read_csv("insurance.csv", delimiter = ",")
+                #the delimiter parameter is optional, pandas could figure out that it is a comma
+                #could also use the sep = "," parameter
+                ```  
+
+                ### Converting the 'object' varibles (i.e. those that are categorical) to numeric:  
+                ```
+                #converting data into a dataframe
+                data = pd.DataFrame(data = data)
+
+                #Label Encoding the data (sex, smoker, and region variables)
+                object_df = data.select_dtypes(include=['object']).copy() 
+                #print(object_df.head())
+                #changing variables to 'category' type 
+                object_df["sex"] = object_df["sex"].astype('category')
+                object_df["smoker"] = object_df["smoker"].astype('category') 
+                object_df["region"] = object_df["region"].astype('category')
+
+                #assinging encoded variables using 'cat.codes' 
+                object_df["sex_binary"] = object_df["sex"].cat.codes 
+                object_df["smoker_binary"] = object_df["smoker"].cat.codes 
+                object_df["region_encoded"] = object_df["region"].cat.codes
+
+                #assigning colums to the data object 
+                data["sex"] = object_df["sex_binary"] 
+                data["smoker"] = object_df["smoker_binary"] 
+                data["region"] = object_df["region_encoded"] 
+
+                ```  
+
+                ''', style = {"font-family":"Verdana"}, className = "container", highlight_config = {"theme":"dark"})
+                ]),
+            html.H3("Data With Categorical Variables", style = {"textAlign":"center", "font-family":"Verdana"}),
+            dash_table.DataTable(id = "table",
+                                 columns = [{"name":i, "id": i} for i in df2.columns ],
+                                 data = df2.to_dict("records")),
+            html.H3("Data With Numerical Variables", style = {"textAlign":"center","font-family":"Verdana"}),
+            dash_table.DataTable(id = "table2",
+                                 columns = [{"name":i, "id":i} for i in df3.columns],
+                                 data = df3.to_dict("records")),
+            dcc.Markdown(''' 
+            ### Variables in the data:  
+            
+            Age: age of the person   
+            BMI: body mass index    
+            Sex: female (0) or male (1)    
+            Children: number of children   
+            Smoker: smoker (1) or non-smoker (0)    
+            Region: southwest (3), southeast (2), northwest (1), northeast (0)  
+            Charges: amount charged by the insurance  
+
+            Data Exploration File: [exploratory_analysis.py](https://github.com/arcelioeperez/dash-app/raw/gh-pages/source/exploratory_analysis.py)  
+            Basic Statistics of the data: [statistical_significance](https://github.com/arcelioeperez/dash-app/raw/gh-pages/source/statistical_significance.py) | [stats.txt](https://github.com/arcelioeperez/dash-app/raw/gh-pages/source/stats.txt)  
+
+            ''', style = {"font-family":"Verdana"}, className = "container", highlight_config = {"theme":"dark"})
+            ]),
+                
         dcc.Tab(label = "Data Exploration", children = [
             html.Div([ 
                 html.H1("Scatter Matrix",style = {"textAlign": "center", "font-family":"Verdana"}), 
@@ -279,29 +347,41 @@ app.layout = html.Div([
             ```
             ## Testing the models:
             ```py
-            models = get_models() 
-            results, names = list(), list() 
-            for name, model in models.items(): 
-                #evaluate the model 
-                scores = evaluate_model(model, dataX, dataY) 
-                #storing the results 
-                results.append(scores) 
-                names.append(name) 
-                #summarizing the performance 
-                #print("Mean MAE scores and STD", name, mean(scores), std(scores)) 
+            models = get_models()
+            results, names = list(), list()
+
+            for name, model in models.items():
+                #evaluate the model
+                scores = evaluate_model(model, dataX, dataY)
+                #storing the results
+                results.append(scores)
+                names.append(name)
+                #summarizing the performance
+                #print("Mean MAE scores and STD", name, mean(scores), std(scores))
                 print("RMSE scores and STD", name, mean(np.sqrt(scores)))
-            # Plotting the results:  
-            plt.boxplot(results, labels = names, showmeans = True) 
-            plt.show() 
+
+            ans = np.sqrt(results)
+            #converting the ans variable to a list in order to plot it with the names list - otherwise it won't run
+            ans = list(ans)
+            plt.boxplot(ans, labels = names, showmeans = True)
             ```  
             For this model I decided to include two error metrics - RMSE (Root Mean Squared Error) and MAE (Mean Squared Error). RMSE tends to penalize bigger errors, 
             therefore when MAEs for a given problem tend to be the same, the RMSE could be a factor deciding which is the 'best' model - or at least the one that fits
             the problem.  
 
-            Since we are dealing with insurance charges, I opted to include both and use the RMSE as the benchmark.  
+            In the above code, if you want to get the same results for the MAE:  
+            >Don't use **'ans = np.sqrt(results)'**. Instead, uncomment the **'print("Mean MAE ...'** and use the **'results'** variable in the **'plt.boxplot(results, labels = names, showmeans = True)'** function.   
+
+            Since we are dealing with insurance charges, I opted to include both error metrics and use the RMSE as the benchmark.  
+            
+            \*[File](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/source/random_forest.py) that produced the model and the plots.\* 
+            
+            To run the above file and create a text file with the output, type:  
+            ```
+            python random_forest.py > random_forest.txt
+            ```  
             
             These files contain the MAE (mean and standard deviation) and the RMSE from the random forest model:  
-
             [MAE-Random Forest](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/source/random_forest_mae.txt)|[RMSE-Random Forest](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/source/random_forest_rmse.txt)  
             ## MAE Plot  
             ![MAE Plot](https://github.com/arcelioeperez/dash-app/raw/gh-pages/demo/randomforest.PNG)
