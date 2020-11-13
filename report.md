@@ -131,16 +131,19 @@ plt.show()
 ## Random Forest Results  
 [MAE-Random Forest](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/source/random_forest_mae.txt) | [RMSE-Random Forest](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/source/random_forest_rmse.txt)  
 
-### MAE Plot  
-Mathematical Formula for MAE:  
+### Mean Absolute Error  
+Mathematical Formula for MAE:    
 ![MAE](demo/MAE.PNG)  
 >[Mathematical Formula Image from: Dataquest.io](https://www.dataquest.io/blog/understanding-regression-error-metrics/)  
 Also, for more information about errors and understanding regression, visit [Dataquest.io](https://www.dataquest.io/blog/understanding-regression-error-metrics/)  
 
+MAE Plot
 ![Random Forest MAE plot](demo/randomforest.PNG)  
 
-### RMSE Plot  
-Mathematical Formula for RMSE:  
+### Root Mean Squared Error    
+Mathematical Formula for RMSE:   
 ![RMSE](demo/RMSE.PNG)  
 >[Mathematical Image from: Statweb.stanford.edu](https://statweb.stanford.edu/~susan/courses/s60/split/node60.html)  
+
+RMSE Plot
 ![Random Forest RMSE plot](demo/randomforestrmse0.PNG)  
