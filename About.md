@@ -20,6 +20,9 @@ You could also download and install 'Chocolatey', which is a package manager for
 Download Chocolatey: [Chocolatey - Windows Package Manager](https://chocolatey.org/)  
 
 **Please use a Unix-like terminal like Git Bash or Powershell - it makes running programs easier**  
+
+> Make sure that you have Python in your **path** otherwise it won't recognize the **python** command.  
+
 ```
 #installing Make with Chocolatey 
 choco install make 
@@ -42,6 +45,20 @@ python app.py
 ```  
 
 >*After running the above commands - either with or without make - you must go the localhost link i.e. http://127.0.0.1:8050/*   
+
+## Running with Anaconda:  
+### Running with Spyder (IDE):  
+
+Click the **run** button and then go to the link that is displayed in the terminal, i.e. **http://127.0.0.1:8050/**  
+
+### Running from the Anaconda Prompt:  
+
+```
+#going to the directory (folder)
+cd foldername 
+#running the app 
+python app.py
+```  
 
 ## Running on MacOS  
 ### Running with Make:  
