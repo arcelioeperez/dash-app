@@ -12,7 +12,11 @@
 # Go to the folder typing 
 cd foldername 
 ```  
-### To run the file that contains the dash app, in this case **app.py**  
+### To run the file that contains the dash app, in this case **app.py**    
+
+>*On Windows make sure you have Python in the **path** otherwise it won't work* --  
+>Here's a [link](https://docs.python.org/3/using/windows.html) that explains the process of adding Python to the path.  
+
 ``` 
 python app.py
 ```  
