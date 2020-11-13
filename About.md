@@ -123,6 +123,13 @@ rm filename
 #or force remove
 rm -rf filename
 ```  
+Opening a website from the Terminal:  
+```
+#MacOS 
+open https:// ... 
+#Linux, where the | means "OR"
+xdg-open file | url
+```  
 
 #### **Note:** if you do not have the required packages you must type this in your command prompt (or Git), Terminal (MacOS) or Linux Terminal   
 ```
