@@ -1,3 +1,6 @@
+---
+title: Data
+---
 # Data Cleaning Process  
 
 ## Reading the data  
