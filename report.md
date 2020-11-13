@@ -148,3 +148,5 @@ Also, for more information about errors and understanding regression, visit [Dat
 
 ### RMSE Plot
 ![Random Forest RMSE plot](demo/randomforestrmse0.PNG)  
+
+Download Random Forest Model: [random_forest.py](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/source/random_forest.py)  
