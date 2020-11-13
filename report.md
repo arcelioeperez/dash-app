@@ -10,7 +10,7 @@ Children: number of children
 Smoker: smoker (1) or non-smoker (0)  
 Region: southwest (3), southeast (2), northwest (1), northeast (0)  
 
-## Code to generate the chart on the website:  
+## Code To Generate The Chart    
 *note: this was generated in the `app.py` program*  
 ``` python
 def update_graph(selected_dropdown):
@@ -63,7 +63,7 @@ Mathematical Formula:
 >"Random Forests grow many classification trees. \[...] Each tree gives a classification, and we say the tree 'votes' for that class. The forest chooses the classification having the most votes (over all the trees in the forest)." - [Breiman and Cutler](https://www.stat.berkeley.edu/~breiman/RandomForests/cc_home.htm)
 >  
 
-## Code used to generate the model:  
+## Code Used To Generate The Model:    
 ```python
 def get_models(): 
     models = dict() 
@@ -131,8 +131,16 @@ plt.show()
 ## Random Forest Results  
 [MAE-Random Forest](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/source/random_forest_mae.txt) | [RMSE-Random Forest](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/source/random_forest_rmse.txt)  
 
-### MAE Plot
+### MAE Plot  
+Mathematical Formula for MAE:  
+![MAE](demo/MAE.PNG)  
+>[Mathematical Formula Image from: Dataquest.io](https://www.dataquest.io/blog/understanding-regression-error-metrics/)  
+Also, for more information about errors and understanding regression, visit [Dataquest.io](https://www.dataquest.io/blog/understanding-regression-error-metrics/)  
+
 ![Random Forest MAE plot](demo/randomforest.PNG)  
 
-### RMSE Plot
+### RMSE Plot  
+Mathematical Formula for RMSE:  
+![RMSE](demo/RMSE.PNG)  
+>[Mathematical Image from: Statweb.stanford.edu](https://statweb.stanford.edu/~susan/courses/s60/split/node60.html)  
 ![Random Forest RMSE plot](demo/randomforestrmse0.PNG)  
