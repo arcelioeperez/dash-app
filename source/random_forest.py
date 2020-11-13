@@ -36,8 +36,8 @@ def get_models():
 def evaluate_model(model, x, y): 
     #defining the evaluation procedure 
     cv = RepeatedKFold(n_splits = 10, n_repeats = 3, random_state = 1) 
-    #scores = cross_val_score(model, dataX, dataY, scoring = "neg_mean_absolute_error", cv = cv, n_jobs = 1, error_score = "raise")
-    scores = cross_val_score(model, dataX, dataY, scoring = "neg_mean_squared_error", cv = cv, n_jobs = 1, error_score = "raise")
+    scores = cross_val_score(model, dataX, dataY, scoring = "neg_mean_absolute_error", cv = cv, n_jobs = 1, error_score = "raise")
+    #scores = cross_val_score(model, dataX, dataY, scoring = "neg_mean_squared_error", cv = cv, n_jobs = 1, error_score = "raise")
 
     return np.absolute(scores) 
 
@@ -51,11 +51,11 @@ for name, model in models.items():
     results.append(scores) 
     names.append(name) 
     #summarizing the performance 
-    #print("Mean MAE scores and STD", name, mean(scores), std(scores)) 
-    print("RMSE scores and STD", name, mean(np.sqrt(scores)))
+    print("Mean MAE scores and STD", name, mean(scores), std(scores)) 
+    #print("RMSE scores and STD", name, mean(np.sqrt(scores)))
 
-ans = np.sqrt(results)
+#ans = np.sqrt(results)
 #converting the ans variable to a list in order to plot it with the names list - otherwise it won't run
-ans = list(ans)
-plt.boxplot(ans, labels = names, showmeans = True) 
+#ans = list(ans)
+plt.boxplot(results, labels = names, showmeans = True) 
 plt.show()
