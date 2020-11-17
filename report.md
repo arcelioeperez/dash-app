@@ -151,6 +151,3 @@ Also, for more information about errors and understanding regression, visit [Dat
 
 Download Random Forest Model: [random_forest.py](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/source/random_forest.py)  
 
-## Comparison with R   
-<a href="source/reportr.pdf"> R Report PDF </a>  
-
