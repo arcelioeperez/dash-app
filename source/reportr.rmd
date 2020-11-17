@@ -1,0 +1,135 @@
+---
+title: "Internship Report in R"
+output: pdf_document
+---
+
+## Internship Report   
+```{r echo = TRUE}  
+rm(list=ls())
+```  
+
+## Importing Packages    
+```{r echo = FALSE, include=FALSE, warning = FALSE, message = FALSE}  
+#Including Packages 
+
+
+installIfAbsentAndLoad <- function(neededVector) {
+  for(thispackage in neededVector) {
+    if( ! require(thispackage, character.only = T) )
+    { install.packages(thispackage)}
+    require(thispackage, character.only = T)
+  }
+}
+
+needed <- c('purrr')  
+installIfAbsentAndLoad(needed) 
+```  
+
+## Data Preprocessing Steps  
+```{r echo = TRUE}  
+
+###### Read the data in ######
+data <- read.csv(file='insurance.csv')
+
+###### Print the first rows ######
+print(head(data, 5))
+
+###### Print the columns' names ######
+print(colnames(data))
+
+###### Print number of rows ######
+print(nrow(data))
+
+###### Converting to Numeric Variables ###### 
+sex <- ifelse(data["sex"] == "female", 0, 1)
+smoker  <- ifelse(data["smoker"] == "yes", 1, 0)
+region <- as.numeric(data$region)
+
+##### Replacing columns in the Data ###### 
+data["sex"] <-  sex
+data["smoker"] <-  smoker
+data["region"] <- region
+```  
+
+## Linear Models - using the `purrr` package to get individual models  
+```{r echo = TRUE}  
+###### Linear Regression ######
+vars = c('age', 'sex', 'bmi', 'children', 'smoker', 'region')
+#Using the purrr package to run all the models corresponding to the predictors
+models <- vars %>% paste ('charges ~', .) %>% map(as.formula) %>% map(lm, data = data)
+```  
+
+## Summaries of the Models  
+
+Age  
+```{r echo = T}
+# age summary
+summary(models[[1]])
+```  
+Sex 
+
+```{r echo = T}
+# sex summary
+summary(models[[2]])
+```  
+BMI 
+
+```{r echo = T}
+# bmi summary
+summary(models[[3]])
+```  
+Children  
+
+```{r echo = T}
+# children summary
+summary(models[[4]])
+```  
+Smoker  
+
+```{r echo = T}
+# smoker summary
+summary(models[[5]])
+```  
+Region  
+
+```{r echo = T}
+# region summary
+summary(models[[6]])
+```     
+  
+******  
+
+
+## Linear Model with All Predictors     
+```{r echo = TRUE} 
+###### Model with all the predictors  ###### 
+allpreds <- lm(charges ~ ., data = data)
+```    
+
+## Summary of the Model     
+```{r echo = T}
+###### Summary ###### 
+summary(allpreds)
+```  
+
+******  
+
+## Linear Model with the Most Relevant Predictors  
+``` {r echo = T}
+most_rel <- lm(charges ~ age + bmi + children + smoker, data = data)
+```  
+
+
+
+
+
+## Summary of the Model  
+```{r echo = T}
+summary(most_rel)
+```
+
+
+## For Comparison with Python Models (Links)
+[GitHub Pages for the Internship](https://arcelioeperez.github.io/dash-app/) | [GitHub Repository](https://github.com/arcelioeperez/dash-app/tree/gh-pages)  
+[Heroku App - using Dash and Plotly](https://my-internship-app.herokuapp.com/)  
+
