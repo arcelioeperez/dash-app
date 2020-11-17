@@ -1,11 +1,5 @@
 theme: jekyll-theme-slate
-show_downloads: true
-navbar:
-  title: "Group 19"
-  center:
-    - text: "Home"
-      href: index.md
-    - text: "Report"
-      href: report.md
+show_downloads: false
+
 
 
