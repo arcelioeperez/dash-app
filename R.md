@@ -19,7 +19,7 @@ I am not going to into the specifics of the languages, but only the differences 
 
 As you can see R offers a more straigh-forward approach to building the models - but it comes with a performance cost.  
 
-To run a simple regression model in R:  
+### To run a simple regression model in R:  
 
 **Note:** Make sure that if you have categorical data you convert it to `numeric` values.
 
@@ -34,16 +34,16 @@ data["sex"] <-  sex
 data["smoker"] <-  smoker
 data["region"] <- region
 ```  
-Using the lm() function:  
+### Using the lm() function:  
 
 Response variable: Y (charges)  
 Predictor variable: X (age)  
 ```
-#note in R it is allowed to have variale names with `.` in between words
+#note in R it is allowed to have variable names with `.` in between words
 example.model <- lm(charges ~ age, data = data) 
 ```  
 
-To get the Summary - use the summary() function:  
+### To get the Summary - use the summary() function:  
 ```
 summary(example)
 ```
