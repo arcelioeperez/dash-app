@@ -16,7 +16,7 @@ If you have `RStudio` - just hit `Knit` and the PDF should pop up.
 ## Differences between Python and R  
 I am not going to into the specifics of the languages, but only the differences when running Linear Regressions and Random Forests.  
 
-As you can see R offers a more straigh-forward approach to building the models - but it comes with a performance cost.  
+As you can see R offers a more straight-forward approach to building the models - but it comes with a performance cost.  
 
 ### To run a simple regression model in R:  
 
