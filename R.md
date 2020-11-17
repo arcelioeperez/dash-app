@@ -11,6 +11,7 @@ Download RMD file: <a href="source/reportr.rmd"> .RMD file </a> | View from the 
 
 ## How to run?  
 If you have `RStudio` - just hit `Knit` and the PDF should pop up.  
+![How to run](demo/howtorun.PNG)  
 
 ## Differences between Python and R  
 I am not going to into the specifics of the languages, but only the differences when running Linear Regressions and Random Forests.  
