@@ -60,7 +60,7 @@ cd foldername
 python app.py
 ```  
 
-## Running on MacOS  
+## Running on MacOS or Linux  
 ### Running with Make:  
 
 Open the terminal and check if you have *make* installed  
@@ -75,8 +75,13 @@ Download Brew: [Homebrew - MacOS Package Manager](https://brew.sh/)
 ```
 brew install make
 ```   
+### Run Without Using Make  
+```
+python3 app.py
+```  
+**Note: When installing packages with `pip` you must also type `pip3` in order to run Python 3.**
 
-**\*The rest is similar to the Windows instructions.\***  
+
 **Note: all the files must be in the same directory (folder) and all the packages must be installed prior to running `app.py`.**  
 
 ### Overview of Unix Commands
