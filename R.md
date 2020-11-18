@@ -4,7 +4,11 @@ title: R
 # R Analysis  
 
 View or download the R PDF (Generated with R Markdown): <a href="source/reportr.pdf"> R PDF </a>  
-Download RMD file: <a href="source/reportr.rmd"> .RMD file </a> | View from the Browser: [.RMD file](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/source/reportr.rmd)  
+Download RMD file: <a href="source/reportr.rmd"> .RMD file </a> | View from Browser: [.RMD file](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/source/reportr.rmd)  
+
+Jupyter Notebook Regression: <a href="source/PythonRegression.ipynb">Download PythonRegression.ipynb </a> | [View from Browser](https://github.com/arcelioeperez/dash-app/blob/gh-pages/source/PythonRegression.ipynb)   
+
+Jupyter Notebook PDF: <a href="source/PythonRegression.PDF"> PythonRegression.PDF </a>  
 
 **If you would like to run the `reportr.rmd` file, make sure that you have R, RStudio, and a LaTeX renderer in your computer - i.e. MiniTeX or TinyTeX.**  
 **Otherwise you could render an HTML document instead of a PDF.**  
