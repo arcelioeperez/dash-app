@@ -28,14 +28,16 @@ df["region"] = object_df["region_encoded"]
 predictors = df.iloc[:,:6] #all columns except 'charges'
 
 for i in predictors: 
-    model = sm.OLS(y, predictors[i]) 
-    results = model.fit()
+	X = predictors[i]
+	X = sm.add_constant(X)
+	model = sm.OLS(y, X) 
+	results = model.fit()
     #results.summary()
-    print(f"{i} vs. charges: ", results.summary())
-    print("**********************************************")
-    print("**********************************************")
-    print("**********************************************")
-    print("P-Values:", results.pvalues)
+	print(f"{i} vs. charges: ", results.summary())
+	print("**********************************************")
+	print("**********************************************")
+	print("**********************************************")
+	print("P-Values:", results.pvalues)
     
 
 
