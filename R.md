@@ -51,7 +51,7 @@ example.model <- lm(charges ~ age, data = data)
 summary(example)
 ```  
 
-Random Forest in R  
+### Random Forest in R  
 If you want to separate the data in training set and test set:  
 
 *Remember to always set a seed in order to replicate results.*  
@@ -64,7 +64,7 @@ train <- sample(nrow(data), 0.8*nrow(data), replace = FALSE)
 trainset <- data[train,]
 testset <- data[-train,]
 ```  
-Running  and plotting the model  
+### Running  and plotting the model  
 ```
 random.forest1 <- randomForest(charges ~ ., data = trainset, ntree = 500, mtry = 6, 
                                importance = TRUE)
