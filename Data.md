@@ -40,7 +40,7 @@ Data Cleaning script: [exploratory_analysis.py](https://raw.githubusercontent.co
 ## Data with numerical values 
 ![data2](/demo/data2.PNG)  
 ## Why?  
-The models used in this analysis, random forest and linear regression, use numerical variables for their analysis. If categorical values are used the models wouldn't work. In other words by converting the categoriacal values to numbers (following the guidelines), for example, female 0 and male 1 - the models know that the *sex* variable can be either 0 or 1.  
+The models used in this analysis, random forest and linear regression, use numerical variables for their analysis. If categorical values are used the models wouldn't work. In other words by converting the categorical values to numbers (following the guidelines), for example, female 0 and male 1 - the models know that the *sex* variable can be either 0 or 1.  
 
 ## Data dictionary
 
