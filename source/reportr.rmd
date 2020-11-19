@@ -21,7 +21,7 @@ installIfAbsentAndLoad <- function(neededVector) {
   }
 }
 
-needed <- c('purrr')  
+needed <- c('purrr', 'randomForest')  
 installIfAbsentAndLoad(needed) 
 ```  
 
@@ -128,6 +128,26 @@ most_rel <- lm(charges ~ age + bmi + children + smoker, data = data)
 summary(most_rel)
 ```
 
+## Random Forest Model  
+```{r echo = T}
+###### Random Forest Model ######
+set.seed(100)
+
+#setting a train and test set 
+train <- sample(nrow(data), 0.8*nrow(data), replace = FALSE) 
+trainset <- data[train,]
+testset <- data[-train,]
+
+random.forest1 <- randomForest(charges ~ ., data = trainset, ntree = 500, mtry = 6, 
+                               importance = TRUE)
+
+random.forest1
+```  
+******
+## Generating the plot  
+```{r echo = T}
+plot(main = "Random Forest Error vs. Number of Trees", random.forest1)
+```
 
 ## For Comparison with Python Models (Links)
 [GitHub Pages for the Internship](https://arcelioeperez.github.io/dash-app/) | [GitHub Repository](https://github.com/arcelioeperez/dash-app/tree/gh-pages)  
