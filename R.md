@@ -55,6 +55,7 @@ summary(example)
 If you want to separate the data in training set and test set:  
 
 >*Remember to always set a seed in order to replicate results.*  
+
 ```
 ###### Random Forest Model ######
 set.seed(100)
