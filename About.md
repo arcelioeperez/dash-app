@@ -19,7 +19,7 @@ If you don't have Make installed you could install it by downloading it on this 
 You could also download and install 'Chocolatey', which is a package manager for Windows.  
 Download Chocolatey: [Chocolatey - Windows Package Manager](https://chocolatey.org/)  
 
-**Please use a Unix-like terminal like Git Bash or Powershell - it makes running programs easier**  
+**Use a Unix-like terminal like Git Bash or Powershell - it makes running programs easier**   
 
 > Make sure that you have Python in your **path** otherwise it won't recognize the **python** command.  
 
@@ -134,6 +134,21 @@ Opening a website from the Terminal:
 open https:// ... 
 #Linux, where the | means "OR"
 xdg-open file | url
+```  
+
+### Running a Linux Terminal on Windows  
+There are also ways of installing a Linux Distribuition Terminal on Windows.    
+Ubuntu, openSUSE, and Kali Linux could be installed using the Windows Subsystem for Linux (WSL).    
+
+Enabling WSL - go to Powershell as an administrator and type   
+```
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+```
+After doing this you can download any Linux distribuition available at the Windows Store.  
+**Note:** You would have to check if Python is installed as well as other dependencies.  
+```
+#checks the version of Python 3
+python3 -V
 ```  
 
 #### **Note:** if you do not have the required packages you must type this in your command prompt (or Git), Terminal (MacOS) or Linux Terminal   
