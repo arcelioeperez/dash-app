@@ -106,7 +106,7 @@ mv filename newfilename
 ```  
 Moving a file to another directory (folder):  
 ```
-mv filename nameofthedirectory
+mv filename nameofthedirectory/
 ```  
 What is your current directory:  
 ```
