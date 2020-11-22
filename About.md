@@ -138,7 +138,7 @@ xdg-open file | url
 
 ### Running a GNU-Linux Terminal on Windows  
 There are also ways of installing a Linux Distribuition Terminal on Windows.    
-Ubuntu, openSUSE, and Kali Linux could be installed using the Windows Subsystem for Linux (WSL).    
+Ubuntu, Debian, openSUSE, and Kali Linux could be installed using the Windows Subsystem for Linux (WSL).    
 
 Enabling WSL - go to Powershell as an administrator and type   
 ```
@@ -149,6 +149,22 @@ After doing this you can download any Linux distribuition available at the Windo
 ```
 #checks the version of Python 3
 python3 -V
+```  
+Installing Python 3, if you don't have it  
+```
+sudo apt-get update 
+sudo apt-get install python3 #Debian and Ubuntu
+```    
+**Use 'dnf' instead of apt if using Fedora, or 'yum' if using CentOS. Also, make sure to check which package manager your distribution uses.**  
+
+Installing **make** - this will install **g++**, **gcc**, and **make**  
+
+>gcc is the C compiler   
+>g++ is the C++ compiler  
+
+```
+sudo apt-get update 
+sudo apt-get install build-essential
 ```  
 
 #### **Note:** if you do not have the required packages you must type this in your command prompt (or Git), Terminal (MacOS) or GNU-Linux Terminal   
