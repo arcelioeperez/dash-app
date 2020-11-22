@@ -154,6 +154,8 @@ Installing Python 3, if you don't have it
 ```
 sudo apt-get update 
 sudo apt-get install python3 #Debian and Ubuntu
+#installing pip3
+sudo apt-get install python3-pip
 ```    
 **Use 'dnf' instead of apt if using Fedora, or 'yum' if using CentOS. Also, make sure to check which package manager your distribution uses.**  
 
