@@ -60,7 +60,7 @@ cd foldername
 python app.py
 ```  
 
-## Running on MacOS or Linux  
+## Running on MacOS or GNU-Linux  
 ### Running with Make:  
 
 Open the terminal and check if you have *make* installed  
@@ -84,7 +84,7 @@ python3 app.py
 
 **Note: all the files must be in the same directory (folder) and all the packages must be installed prior to running `app.py`.**  
 
-### Overview of Unix Commands
+### Overview of Unix/GNU-Linux Commands
 Once all the files are in one folder:  
 ```
 # Go to the folder by typing 
@@ -136,7 +136,7 @@ open https:// ...
 xdg-open file | url
 ```  
 
-### Running a Linux Terminal on Windows  
+### Running a GNU-Linux Terminal on Windows  
 There are also ways of installing a Linux Distribuition Terminal on Windows.    
 Ubuntu, openSUSE, and Kali Linux could be installed using the Windows Subsystem for Linux (WSL).    
 
@@ -151,7 +151,7 @@ After doing this you can download any Linux distribuition available at the Windo
 python3 -V
 ```  
 
-#### **Note:** if you do not have the required packages you must type this in your command prompt (or Git), Terminal (MacOS) or Linux Terminal   
+#### **Note:** if you do not have the required packages you must type this in your command prompt (or Git), Terminal (MacOS) or GNU-Linux Terminal   
 ```
 pip install -r requirements.txt
 #or 
