@@ -163,14 +163,46 @@ summary(testset$charges)
 prediction <- predict(random.forest1, newdata = testset)
 
 prediction <- ifelse(prediction <= 10000, 0, 1)
-testset$charges <- ifelse(testset$charges <= 10000, 0, 1)
+testing <- ifelse(testset$charges <= 10000, 0, 1)
 
-confusionMatrix(factor(prediction, levels = min(testset$charges):max(testset$charges)), 
-      factor(testset$charges, levels = min(testset$charges):max(testset$charges)))
+confusionMatrix(factor(prediction, levels = min(testing):max(testing)), 
+      factor(testing, levels = min(testing):max(testing)))
+
+```  
+
+## Tuning the Random Forest Model  
+The tuneRF() function comes from the `randomForest` package.  
+
+According to the documentation, this function starts from the given parameter of `mtry` - 3 in this example - and searches for the **optimal value of mtry**.  
+
+*With respect to Out-of-Bag error estimate*  
+```{r echo = T, warning = F}
+set.seed(100)
+tuning.model <- tuneRF(
+  x = testset, 
+  y = testset$charges, 
+  ntreeTry = 600, 
+  mtryStart = 3, 
+  stepFactor = 0.5, 
+  improve = 0.03, 
+  trace = FALSE
+)
 
 ```
 
+### Benefits of Random Forest   
 
+-Easy to interpret the models  
+-Could be used for regression or classification  
+-Could be used in large datasets   
+
+### Pitfalls of Random Forest    
+
+-Are prone to overfitting    
+-Accuraccy tends to be lower than other Machine Learning techniques    
+-High Variance
+
+*[Citation: Towards AI](https://towardsai.net/p/machine-learning/why-choose-random-forest-and-not-decision-trees)*  
 
 ## For Comparison with Python Models (Links)
 [GitHub Pages for the Internship](https://arcelioeperez.github.io/dash-app/) | [GitHub Repository](https://github.com/arcelioeperez/dash-app/tree/gh-pages)  
