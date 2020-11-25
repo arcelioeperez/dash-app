@@ -5,8 +5,18 @@
 ### URL for the Github website (contains the links, pdf, and files needed for this project): [click here](https://arcelioeperez.github.io/dash-app/)  
 
 ### App Demo 
-![Demo GIF](demo/my-dash-app.gif)
+![Demo GIF](demo/my-dash-app.gif)  
 
+### Cloning the repository  
+```
+git clone https://github.com/arcelioeperez/dash-app.git
+```  
+If you download a `.zip` folder or `tar.gz`  
+```
+unzip nameofthezipped folder
+#for tar.gz
+tar -xvf nameofthetar folder
+```  
 ### Running the app - once the website folder has been downloaded and unzipped  
 ``` 
 # Go to the folder typing 
@@ -18,13 +28,13 @@ cd foldername
 >Here's a [link](https://docs.python.org/3/using/windows.html) that explains the process of adding Python to the path.  
 
 ``` 
-python app.py
+python3 app.py
 ```  
 ### This will render the localhost address, this address can then be opened in the browser of choice  
 
 ### **Note** if you do not have the required packages you must type this in your command prompt (or Git), Terminal (MacOS)  
 ``` 
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```  
 #### *requirements.txt* contains all the libraries and dependencies needed to run **app.py**  
 #### View the requirements.txt file here: [view](https://raw.githubusercontent.com/arcelioeperez/dash-app/main/assets/requirements.txt)  
