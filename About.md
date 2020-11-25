@@ -3,7 +3,7 @@ title: About
 ---  
 
 ## Files to Download:  
-Required files (download from browser): [insurance.csv](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/source/insurance.csv) | [requirements.txt](https://raw.githubusercontent.com/arcelioeperez/dash-app/main/assets/requirements.txt) | [app.py](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/source/app.py)  
+Required files (download from browser): [insurance.csv](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/source/insurance.csv) | [requirements.txt](https://raw.githubusercontent.com/arcelioeperez/dash-app/main/assets/requirements.txt) | [app.py](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/source/app.py) | [eapp - Executable](https://github.com/arcelioeperez/dash-app/blob/gh-pages/source/eapp)  
 
 Download here: 
 <a target = "_blank" href="source/insurance.csv" download>insurance.csv</a> | <a href="source/requirements.txt" download>requirements.txt</a> | <a target = "_blank" href="source/app.py" download>app.py</a>  
@@ -176,6 +176,12 @@ pip install -r requirements.txt
 make packages
 ```    
 **requirements.txt** contains all the libraries and dependencies needed to run **app.py**  - also, as explained above, the Makefile contains the 'make packages' which runs the `pip install -r requirements.txt` command  
+
+### Running the `eapp` executable  
+```
+./eapp 
+```  
+**After this command, you have to go to the URL that appears on the terminal.**
 
 ### Works Cited:    
 1.[Machine Learning Mastery - Random Forest](https://machinelearningmastery.com/random-forest-ensemble-in-python/)  
