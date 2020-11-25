@@ -32,6 +32,20 @@ pip install -r requirements.txt
 
 ### *If you want to fork or clone the directory feel free to do so. From the [Github URL](https://arcelioeperez.github.io/dash-app/) there are two download buttons for `.zip` and `.tar.gz` files*   
 
+### Running the `eapp` executable  
+Creating the executable  
+```
+chmod +x eapp
+```  
+**The first line of this script is the location of the Python3 interpreter**  
+```
+#!/usr/bin/env python3
+```
+To run  
+```
+./eapp 
+```
+
 ### Works Cited  
 1.[Machine Learning Mastery - Random Forest](https://machinelearningmastery.com/random-forest-ensemble-in-python/)  
 2.[Machine Learning Mastery - Huber Regressor](https://machinelearningmastery.com/robust-regression-for-machine-learning-in-python/#:~:text=Regression%20is%20a%20modeling%20task,most%20successful%20being%20linear%20regression.)  
