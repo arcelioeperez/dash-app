@@ -56,6 +56,29 @@ To run
 ./eapp 
 ```
 
+### Running from VIM  
+On `visual` mode type: 
+```
+:!python3 %
+```  
+If you want to map commands you must go to the `.vimrc` file and type:  
+```
+command P:!python3 %
+```
+Now to run you just have to type: 
+```
+:P
+```  
+
+### Running from Emacs  
+```
+#open a shell window
+M-x shell
+#or - if using a makefile
+M-! compile
+```  
+**After opening the shell window you just have to type `python3 nameofthefile.py`**  
+
 ### Works Cited  
 1.[Machine Learning Mastery - Random Forest](https://machinelearningmastery.com/random-forest-ensemble-in-python/)  
 2.[Machine Learning Mastery - Huber Regressor](https://machinelearningmastery.com/robust-regression-for-machine-learning-in-python/#:~:text=Regression%20is%20a%20modeling%20task,most%20successful%20being%20linear%20regression.)  
