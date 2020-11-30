@@ -75,7 +75,7 @@ Now to run you just have to type:
 #open a shell window
 M-x shell
 #or - if using a makefile
-M-! compile
+M-x compile
 ```  
 **After opening the shell window you just have to type `python3 nameofthefile.py`**  
 
