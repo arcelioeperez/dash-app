@@ -22,35 +22,35 @@ This should return the `path` of the `python3` command. Example: `/usr/bin/pytho
 ### Using `chmod` and Bash Scripts  
 If you want to run the `eapp` file or you want to create a new **bash** script, you must include a `shebang` indicating the location of the Python interpreter.  
 
-#### Example: 
+Example: 
 ```
 #!/usr/bin/env python3 
 ```
-#### Making an executable:  
+Making an executable:  
 ```
 chmod +x nameofthefile
 ```
-**Note:** The first line of `nameofthefile` must be the `shebang` or location of the interpreter.  
+**Note:** The first line of nameofthefile must be the `shebang` or location of the interpreter.  
 
 Doing this will create an executable, meaning that you will be able to run the file by typing:  
 ```
 ./nameofthefile
 ```
 ### Error: Wrong Interpreter Python3^M - This Error Usually Happens on Unix-like systems (MacOS and Linux)
-**Solution:** this file was generated in a Windows machine running a WSL (Debian). One way to fix this error is to the `dos2unix` package.  
+**Solution:** this file was generated in a Windows machine running a WSL (Debian). One way to fix this error is to use the `dos2unix` package.  
 
-#### Downloading on MacOS  
+Downloading on MacOS  
 ```
 brew install dos2unix
 ```
-#### Downloading on Linux (Debian, Ubuntu, or Linux Mint)  
+Downloading on Linux (Debian, Ubuntu, or Linux Mint)  
 
 **Check your distribution package manager i.e in Fedora you would use `dnf` instead of `apt`**
 ```
 sudo apt-get install dos2unix
 ```  
 
-#### Using `dos2unix`  
+Using dos2unix
 ```
 dos2unix nameofthefile.py
 ```
