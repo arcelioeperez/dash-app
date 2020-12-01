@@ -4,14 +4,14 @@ title: Data
 # Data Cleaning Process  
 
 ## Reading the data  
-```
+```python
 import pandas as pd 
 
 data = pd.read_csv("insurance.csv", delimiter = ",")
 ```
 
 ## Preparing the data for the models  
-```
+```python
 #converting data into a dataframe
 data = pd.DataFrame(data = data)
 
