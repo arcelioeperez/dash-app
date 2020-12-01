@@ -8,10 +8,10 @@ python nameofthefile.py
 pip install -r requirements.txt
 ```  
 
-For Linux, MacOS, or any other Unix-like operating system, the `python3` is commonly used to differentiate it from the `python` command which is associated with Python 2.  
+For Linux, MacOS, or any other Unix-like operating system, the `python3` command is commonly used to differentiate it from the `python` command which is associated with Python 2.  
 
 ### Where is Python installed?  
-If you are running Windows, try installing either a WSL (Windows Subsytem for Linux), Powershell or Git Bash terminal. The reason is that you will be able to use Linux commands and follow along the steps.  
+If you are running Windows, try installing either a WSL (Windows Subsytem for Linux) terminal, Powershell terminal or Git Bash terminal. The reason is that you will be able to use Linux commands and follow along the steps.  
 
 If you are running MacOS or Linux (or Windows with any of the aforementioned terminals), type: 
 ```
@@ -35,6 +35,8 @@ chmod +x nameofthefile
 Doing this will create an executable, meaning that you will be able to run the file by typing:  
 ```
 ./nameofthefile
+#or
+bash nameofthefile
 ```
 ### Error: Wrong Interpreter Python3^M - This Error Usually Happens on Unix-like systems (MacOS and Linux)
 **Solution:** this file was generated in a Windows machine running a WSL (Debian). One way to fix this error is to use the `dos2unix` package.  
@@ -45,7 +47,7 @@ brew install dos2unix
 ```
 Downloading on Linux (Debian, Ubuntu, or Linux Mint)  
 
-**Check your distribution package manager i.e in Fedora you would use `dnf` instead of `apt`**
+*Check your distribution package manager i.e in Fedora you would use `dnf` instead of `apt`*
 ```
 sudo apt-get install dos2unix
 ```  
