@@ -12,7 +12,7 @@
 
 ### Cloning the repository  
 ```
-git clone https://github.com/arcelioeperez/dash-app.git
+git clone https://github.com/arcelioeperez/dash-app.git && cd dash-app
 ```  
 If you download a `.zip` folder or `tar.gz`  
 ```
