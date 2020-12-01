@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
+open http://127.0.0.1:8050/
 ./eapp 
-xdg-open http://127.0.0.1:8050/
