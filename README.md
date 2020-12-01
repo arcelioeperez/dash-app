@@ -94,5 +94,25 @@ M-x compile
 6.[ScreenToGIF - to generate the demo](https://www.screentogif.com/)  
 
 ### Text editors used: VS Code, GNU-Emacs, and VIM.  
+Download GNU-Emacs - MacOS:
+```
+brew cask install emacs
+```  
+*VIM should be already installed. To open VIM, go to the terminal and type: `vim`.*  
+
+Download GNU-Emacs - GNU-Linux Ubuntu:  
+```
+sudo add-apt-repository ppa:kelleyk/emacs
+sudo apt update
+sudo apt install emacs27
+```  
+
+If you would like to configure VIM, go to the `.vimrc` file and make the changes you want.  
+
+If you would like to configure GNU-Emacs, go to the `.emacs`, `.init.el`, or `emacs.el` file and make the changes you want. 
 
 ### Python version: Python 3.7.3 (mostly run with Windows 10, WSL Debian). Other operating systems used: MacOS and Ubuntu (20.04.1 LTS).  
+Check Python version with:  
+```
+python3 -V
+```
