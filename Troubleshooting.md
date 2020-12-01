@@ -1,3 +1,6 @@
+---
+title: Troubleshooting
+---
 ## Errors While Running Scripts  
 
 ### Python or Python3  
