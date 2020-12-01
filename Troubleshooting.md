@@ -47,7 +47,8 @@ brew install dos2unix
 ```
 Downloading on Linux (Debian, Ubuntu, or Linux Mint)  
 
-*Check your distribution package manager i.e in Fedora you would use `dnf` instead of `apt`*
+>*Check your distribution package manager i.e in Fedora you would use `dnf` instead of `apt`*  
+
 ```
 sudo apt-get install dos2unix
 ```  
