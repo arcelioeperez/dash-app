@@ -30,11 +30,14 @@ cd foldername
 ``` 
 python3 app.py
 ```  
-### This will render the localhost address, this address can then be opened in the browser of choice  
+### This will render the localhost address, this address can then be opened in the browser of choice.  
 
-### **Note** if you do not have the required packages you must type this in your command prompt (or Git), Terminal (MacOS)  
+### **Note:** if you do not have the required packages you must type this in your command prompt or terminal:     
 ``` 
+#MacOS or Linux
 pip3 install -r requirements.txt
+#Windows 
+pip install -r requirements.txt
 ```  
 #### *requirements.txt* contains all the libraries and dependencies needed to run **app.py**  
 #### View the requirements.txt file here: [view](https://raw.githubusercontent.com/arcelioeperez/dash-app/main/assets/requirements.txt)  
@@ -47,7 +50,7 @@ Creating the executable
 ```
 chmod +x eapp
 ```  
-**The first line of this script is the location of the Python3 interpreter**  
+**The first line of this script is the location of the Python3 interpreter. If you are running Windows you might have a different interpreter. These are [common problems that could happen when running the scripts and their solutions](https://arcelioeperez.github.io/dash-app/Troubleshooting).**   
 ```
 #!/usr/bin/env python3
 ```
