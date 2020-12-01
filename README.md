@@ -89,3 +89,7 @@ M-x compile
 4.[Dash](https://dash.plotly.com/)  
 5.[Dataset Kaggle - Insurance Charges by Miri Choi](https://www.kaggle.com/mirichoi0218/insurance)  
 6.[ScreenToGIF - to generate the demo](https://www.screentogif.com/)  
+
+### Text editors used: VS Code, GNU-Emacs, and VIM.  
+
+### Python version: Python 3.7.3 (mostly run with Windows 10, WSL Debian). Other operating systems used: MacOS and Ubuntu (20.04.1 LTS).  
