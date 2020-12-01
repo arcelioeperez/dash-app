@@ -26,7 +26,7 @@ As you can see R offers a more straight-forward approach to building the models 
 
 **Note:** Make sure that if you have categorical data you convert it to `numeric` values.
 
-```
+```r
 ###### Converting to Numeric Variables ###### 
 sex <- ifelse(data["sex"] == "female", 0, 1)
 smoker  <- ifelse(data["smoker"] == "yes", 1, 0)
@@ -41,13 +41,13 @@ data["region"] <- region
 
 Response variable: Y (charges)  
 Predictor variable: X (age)  
-```
+```r
 #note in R it is allowed to have variable names with `.` in between words
 example.model <- lm(charges ~ age, data = data) 
 ```  
 
 ### To get the Summary - use the summary() function:  
-```
+```r
 summary(example)
 ```  
 
@@ -56,7 +56,7 @@ If you want to separate the data in training set and test set:
 
 >*Remember to always set a seed in order to replicate results.*  
 
-```
+```r
 ###### Random Forest Model ######
 set.seed(100)
 
@@ -66,7 +66,7 @@ trainset <- data[train,]
 testset <- data[-train,]
 ```  
 ### Running  and plotting the model  
-```
+```r
 random.forest1 <- randomForest(charges ~ ., data = trainset, ntree = 500, mtry = 6, 
                                importance = TRUE)
 plot(main = "Random Forest Errors vs. Number of Trees", random.forest1)
