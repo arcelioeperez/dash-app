@@ -73,7 +73,7 @@ Now to run you just have to type:
 :P
 ```  
 
-### Running from Emacs  
+### Running from GNU-Emacs  
 ```
 #open a shell window
 M-x shell
