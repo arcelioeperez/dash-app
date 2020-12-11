@@ -31,10 +31,14 @@ deactivate
 Opening Jupyter Notebook (from the terminal):  
 ```
 jupyter notebook
-```
-
+```  
 **Always make sure that your Operating System (OS) supports these commands.
 They all have to be executed from an elevated terminal (i.e. as an
 administrator). The terminal must also support Unix commands.** 
 
-OS used for this demonstration: Ubuntu 20.04.1 LTS
+OS used for this demonstration: Ubuntu 20.04.1 LTS  
+
+# Or Try Jupyter Notebook From The Browser  
+Languages supported: Python, Ruby, R, C++, Julia, Scheme, and more.  
+
+[Jupyter.org](https://jupyter.org/try)
