@@ -3,19 +3,18 @@ title: MySQLNotes
 ---
 # Using MySQL to store CSV files:    
 
-1. To open MySQL type:    
+To open MySQL type:    
 ```
 mysql --local-infile=1 -u root -p
 ```   
 
 Type your password.    
 
-2. Use an existing database (or create one):    
+Use an existing database (or create one):    
 ```
 use database; 
 ```    
-
-3. Create an empty table (with all the columns to be read and their data types):      
+Create an empty table (with all the columns to be read and their data types):      
 
 Example:    
 
@@ -35,7 +34,7 @@ reviews float
 );
 ```  
 
-4. Load the data:    
+Load the data:    
 ```
 load data local infile '/path/to/file/file.csv'
 into table data
