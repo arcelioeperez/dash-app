@@ -1,3 +1,6 @@
+---
+title: MySQL
+---
 # Using MySQL to store CSV files:    
 
 1. To open MySQL type:    
