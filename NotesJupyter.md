@@ -41,4 +41,6 @@ OS used for this demonstration: Ubuntu 20.04.1 LTS
 **Or Try Jupyter Notebook From The Browser**  
 *Languages supported: Python, Ruby, R, C++, Julia, Scheme, and more.*  
 
-[Jupyter.org](https://jupyter.org/try)
+If you host your Notebooks on GitHub, you could create your own environment using [Binder](https://mybinder.org/).  
+
+[Jupyter.org](https://jupyter.org/try) documentation.  
