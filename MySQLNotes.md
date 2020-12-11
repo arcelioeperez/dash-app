@@ -1,7 +1,16 @@
 ---
 title: MySQLNotes
 ---
-# Using MySQL to store CSV files:    
+# Using MySQL to store CSV files  
+
+Installing MySQL on Linux:    
+```
+sudo apt update
+sudo apt install mysql-server
+
+#configuring MySQL 
+sudo mysql_secure_installation
+```  
 
 To open MySQL type:    
 ```
@@ -41,12 +50,5 @@ escaped by '"'
 lines terminated by '\n'
 ignore 1 lines; 
 ```  
-
-### Installing MySQL on Linux:    
-```
-sudo apt update
-sudo apt install mysql-server
-
-#configuring MySQL 
-sudo mysql_secure_installation
-```
+#### MySQL Documentation 
+[MySQL](https://dev.mysql.com/doc/)  
