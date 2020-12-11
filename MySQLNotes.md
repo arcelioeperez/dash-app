@@ -1,5 +1,5 @@
 ---
-title: MySQL
+title: MySQLNotes
 ---
 # Using MySQL to store CSV files:    
 
