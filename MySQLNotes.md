@@ -6,9 +6,7 @@ title: MySQLNotes
 To open MySQL type:    
 ```
 mysql --local-infile=1 -u root -p
-```   
-
-Type your password.    
+```    
 
 Use an existing database (or create one):    
 ```
@@ -16,8 +14,7 @@ use database;
 ```    
 Create an empty table (with all the columns to be read and their data types):      
 
-Example:    
-
+*Example:*    
 ```
 create table data(
 id int, 
