@@ -15,8 +15,7 @@ Type your password.
 use database; 
 ```    
 
-3. Create an empty table (with all the columns to be read and their data
-   types):    
+3. Create an empty table (with all the columns to be read and their data types):      
 Example:    
 
 ```
