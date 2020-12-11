@@ -3,32 +3,32 @@ title: NotesJupyter
 ---
 # Using a Python Virtual Environment
 
-### Installing `virtualenv`  Virtual Environment:    
+Installing `virtualenv`  Virtual Environment:    
 ```
 sudo -H pip3 install virtualenv
 ```  
 
-### Initializing a Virtual Environment:  
+Initializing a Virtual Environment:  
 ```
 virtualenv name
 ```  
 
-### Activating a Virtual Environment:  
+Activating a Virtual Environment:  
 ```
 source name/bin/activate
 ```  
 
-### Installing packages inside the Virtual Environment:  
+Installing packages inside the Virtual Environment:  
 ```
 pip install jupyterlab #installs jupyter notebook
 ```  
 
-### Deactivating the environment, i.e. shutting it off:  
+Deactivating the environment, i.e. shutting it off:  
 ```
 deactivate
 ```
 
-### Opening Jupyter Notebook (from the terminal):  
+Opening Jupyter Notebook (from the terminal):  
 ```
 jupyter notebook
 ```
