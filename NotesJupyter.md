@@ -1,5 +1,5 @@
 ---
-title: Jupyter Notebook
+title: NotesJupyter
 ---
 # Using a Python Virtual Environment
 
