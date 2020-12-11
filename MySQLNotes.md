@@ -3,7 +3,7 @@ title: MySQLNotes
 ---
 # Using MySQL to store CSV files  
 
-Installing MySQL on Linux:    
+**Installing MySQL on Linux:**      
 ```
 sudo apt update
 sudo apt install mysql-server
@@ -12,16 +12,16 @@ sudo apt install mysql-server
 sudo mysql_secure_installation
 ```  
 
-To open MySQL type:    
+**To open MySQL type:**     
 ```
 mysql --local-infile=1 -u root -p
 ```    
 
-Use an existing database (or create one):    
+**Use an existing database (or create one):**     
 ```
 use database; 
 ```    
-Create an empty table (with all the columns to be read and their data types):      
+**Create an empty table (with all the columns to be read and their data types):**      
 
 *Example:*    
 ```
@@ -40,7 +40,7 @@ reviews float
 );
 ```  
 
-Load the data:    
+**Load the data:**    
 ```
 load data local infile '/path/to/file/file.csv'
 into table data
