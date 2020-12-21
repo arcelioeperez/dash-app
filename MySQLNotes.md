@@ -50,5 +50,12 @@ escaped by '"'
 lines terminated by '\n'
 ignore 1 lines; 
 ```  
+
 #### MySQL Documentation 
 [MySQL](https://dev.mysql.com/doc/)  
+
+# Alternatively, you can use `tomysqlv2`  
+
+This program was developed using SQLAlchemy, Pandas, MySQLClient and PyMySQL. It lets you input a CSV file, your MySQL credentials, and the name for the table. It then processes the information, creates the MySQL table (with the correct data types), and transfers the CSV file to MySQL. 
+
+**More Infomation [here](https://github.com/arcelioeperez/csvtomysql)**  
