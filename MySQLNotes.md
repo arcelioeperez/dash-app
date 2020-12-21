@@ -54,7 +54,7 @@ ignore 1 lines;
 #### MySQL Documentation 
 [MySQL](https://dev.mysql.com/doc/)  
 
-# Alternatively, you can use `tomysqlv2`  
+# Alternatively, you can use [tomysqlv2](https://github.com/arcelioeperez/csvtomysql)    
 
 This program was developed using SQLAlchemy, Pandas, MySQLClient and PyMySQL. It lets you input a CSV file, your MySQL credentials, and the name for the table.  
 
@@ -62,4 +62,4 @@ It then processes the information, creates the MySQL table (with the correct dat
 
 **More Infomation [here](https://github.com/arcelioeperez/csvtomysql)**    
 
-**Download here [tomysqlv2](https://raw.githubusercontent.com/arcelioeperez/csvtomysql/main/tomysqlv2)**
+**See the code on the browser (or download with wget) here [link-tomysqlv2](https://raw.githubusercontent.com/arcelioeperez/csvtomysql/main/tomysqlv2)**
