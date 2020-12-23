@@ -51,9 +51,8 @@ lines terminated by '\n'
 ignore 1 lines; 
 ```  
 
-#### MySQL Documentation 
-[MySQL](https://dev.mysql.com/doc/)  
-
+#### [MySQL](https://dev.mysql.com/doc/) Documentation 
+  
 # Using [tomysqlv2](https://github.com/arcelioeperez/csvtomysql)    
 
 This program was developed using SQLAlchemy, Pandas, MySQLClient and PyMySQL. It lets you input a CSV file, your MySQL credentials, and the name for the table.  
