@@ -54,7 +54,7 @@ ignore 1 lines;
 #### MySQL Documentation 
 [MySQL](https://dev.mysql.com/doc/)  
 
-# Alternatively, you can use [tomysqlv2](https://github.com/arcelioeperez/csvtomysql)    
+# Using [tomysqlv2](https://github.com/arcelioeperez/csvtomysql)    
 
 This program was developed using SQLAlchemy, Pandas, MySQLClient and PyMySQL. It lets you input a CSV file, your MySQL credentials, and the name for the table.  
 
