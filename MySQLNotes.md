@@ -51,7 +51,7 @@ lines terminated by '\n'
 ignore 1 lines; 
 ```  
 
-#### MySQL: [Documentation](https://dev.mysql.com/doc/)  
+*MySQL: [Documentation](https://dev.mysql.com/doc/)*  
   
 # Using [tomysqlv2](https://github.com/arcelioeperez/csvtomysql)    
 
