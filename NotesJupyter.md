@@ -43,4 +43,6 @@ OS used for this demonstration: Ubuntu 20.04.1 LTS
 
 If you host your Notebooks on GitHub, you could create your own environment using [Binder](https://mybinder.org/).  
 
+Jupyter Notebook with C++ and Python support: [here](https://github.com/arcelioeperez/NotebooksC)  
+
 [Jupyter.org](https://jupyter.org/try) documentation.  
