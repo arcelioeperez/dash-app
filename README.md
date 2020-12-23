@@ -1,6 +1,4 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/arcelioeperez/dash-app)  
-
-Pandas Python Support: ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Pandas)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/arcelioeperez/dash-app) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Pandas)
 # This is a Dash App for my internship at The GreatFull Plate  
 ## Author: Arcelio E. Perez  
 
