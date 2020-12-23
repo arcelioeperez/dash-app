@@ -1,3 +1,4 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 # This is a Dash App for my internship at The GreatFull Plate  
 ## Author: Arcelio E. Perez  
 
