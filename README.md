@@ -1,9 +1,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/arcelioeperez/dash-app) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Pandas)
 # This is a Dash App for my internship at The GreatFull Plate  
-## Author: Arcelio E. Perez  
+Author: Arcelio E. Perez  
 
-### URL for the Heroku app: [click here](https://my-internship-app.herokuapp.com/)
-### URL for the Github website (contains the links, pdf, and files needed for this project): [click here](https://arcelioeperez.github.io/dash-app/)  
+URL for the Heroku app: [click here](https://my-internship-app.herokuapp.com/)  
+URL for the Github website (contains the links, pdf, and files needed for this project): [click here](https://arcelioeperez.github.io/dash-app/)  
 
 ### App Demo 
 ![Demo GIF](demo/my-dash-app.gif)  
@@ -31,22 +31,22 @@ cd foldername
 ``` 
 python3 app.py
 ```  
-### This will render the localhost address, this address can then be opened in the browser of choice.  
+This will render the localhost address, this address can then be opened in the browser of choice.  
 
-### **Note:** if you do not have the required packages you must type this in your command prompt or terminal:     
+**Note:** if you do not have the required packages you must type this in your command prompt or terminal:     
 ``` 
 #MacOS or Linux
 pip3 install -r requirements.txt
 #Windows 
 pip install -r requirements.txt
 ```  
-#### *requirements.txt* contains all the libraries and dependencies needed to run **app.py**  
-#### View the requirements.txt file here: [view](https://raw.githubusercontent.com/arcelioeperez/dash-app/main/assets/requirements.txt)  
-#### Download the requirements.txt file here: <a href="/requirements.txt" download>requirements.txt</a>  
+*requirements.txt* contains all the libraries and dependencies needed to run **app.py**  
+View the requirements.txt file here: [view](https://raw.githubusercontent.com/arcelioeperez/dash-app/main/assets/requirements.txt)  
+Download the requirements.txt file here: <a href="/requirements.txt" download>requirements.txt</a>  
 
-### *If you want to fork or clone the directory feel free to do so. From the [Github URL](https://arcelioeperez.github.io/dash-app/) there are two download buttons for `.zip` and `.tar.gz` files*   
+*If you want to fork or clone the directory feel free to do so. From the [Github URL](https://arcelioeperez.github.io/dash-app/) there are two download buttons for `.zip` and `.tar.gz` files*   
 
-### Running the `eapp` executable  
+Running the `eapp` executable  
 Creating the executable  
 ```
 chmod +x eapp
@@ -60,7 +60,7 @@ To run
 ./eapp 
 ```
 
-### Running from VIM  
+Running from VIM  
 On `visual` mode type: 
 ```
 :!python3 %
@@ -74,24 +74,16 @@ Now to run you just have to type:
 :P
 ```  
 
-### Running from GNU-Emacs  
+Running from GNU-Emacs  
 ```
 #open a shell window
 M-x shell
 #or - if using a makefile
 M-x compile
 ```  
-**After opening the shell window you just have to type `python3 nameofthefile.py`**  
+**After opening the shell window you just have to type `python3 nameofthefile.py`**   
 
-### Works Cited  
-1.[Machine Learning Mastery - Random Forest](https://machinelearningmastery.com/random-forest-ensemble-in-python/)  
-2.[Machine Learning Mastery - Huber Regressor](https://machinelearningmastery.com/robust-regression-for-machine-learning-in-python/#:~:text=Regression%20is%20a%20modeling%20task,most%20successful%20being%20linear%20regression.)  
-3.[Plotly](https://plotly.com/)  
-4.[Dash](https://dash.plotly.com/)  
-5.[Dataset Kaggle - Insurance Charges by Miri Choi](https://www.kaggle.com/mirichoi0218/insurance)  
-6.[ScreenToGIF - to generate the demo](https://www.screentogif.com/)  
-
-### Text editors used: VS Code, GNU-Emacs, and VIM.  
+Text editors used: VS Code, GNU-Emacs, and VIM.  
 Download GNU-Emacs - MacOS:
 ```
 brew cask install emacs
@@ -109,8 +101,15 @@ If you would like to configure VIM, go to the `.vimrc` file and make the changes
 
 If you would like to configure GNU-Emacs, go to the `.emacs`, `.init.el`, or `emacs.el` file and make the changes you want. 
 
-### Python version: Python 3.7.3 (mostly run with Windows 10, WSL Debian). Other operating systems used: MacOS and Ubuntu (20.04.1 LTS).  
+Python version: Python 3.7.3 (mostly run with Windows 10, WSL Debian). Other operating systems used: MacOS and Ubuntu (20.04.1 LTS).  
 Check Python version with:  
 ```
 python3 -V
-```
+```  
+### Works Cited  
+1.[Machine Learning Mastery - Random Forest](https://machinelearningmastery.com/random-forest-ensemble-in-python/)  
+2.[Machine Learning Mastery - Huber Regressor](https://machinelearningmastery.com/robust-regression-for-machine-learning-in-python/#:~:text=Regression%20is%20a%20modeling%20task,most%20successful%20being%20linear%20regression.)  
+3.[Plotly](https://plotly.com/)  
+4.[Dash](https://dash.plotly.com/)  
+5.[Dataset Kaggle - Insurance Charges by Miri Choi](https://www.kaggle.com/mirichoi0218/insurance)  
+6.[ScreenToGIF - to generate the demo](https://www.screentogif.com/)  
