@@ -1,4 +1,6 @@
-# Using Docker 
+# Using Docker  
+
+Download the Dockerfile: [here](https://raw.githubusercontent.com/arcelioeperez/dash-app/gh-pages/Dockerfile)
 
 **Installing Docker**  
 
