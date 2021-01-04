@@ -143,7 +143,7 @@ plt.show()
 ### Root Mean Squared Error    
 **Mathematical Formula for RMSE:**  
 ![RMSE](demo/RMSE.PNG)  
->[Mathematical Image from: Statweb.stanford.edu](https://statweb.stanford.edu/~susan/courses/s60/split/node60.html)  
+>[Mathematical Formula Image from: Statweb.stanford.edu](https://statweb.stanford.edu/~susan/courses/s60/split/node60.html)  
 
 ### RMSE Plot
 ![Random Forest RMSE plot](demo/randomforestrmse0.PNG)  
