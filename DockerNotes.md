@@ -28,4 +28,4 @@ sudo docker build /path/to/the/dockerfile -t dash-app
 sudo docker run -p 8080:80 dash-app
 ```  
 
-**Open localhost at http://localhost:8080/.**  
+**Open localhost at http://localhost:8080/. Or any other host that you defined in your app.**  
