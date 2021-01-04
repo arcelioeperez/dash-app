@@ -135,8 +135,7 @@ plt.show()
 **Mathematical Formula for MAE:**      
 ![MAE](demo/MAE.PNG)  
 
->[Mathematical Formula Image from: Dataquest.io](https://www.dataquest.io/blog/understanding-regression-error-metrics/)  
-Also, for more information about errors and understanding regression, visit [Dataquest.io](https://www.dataquest.io/blog/understanding-regression-error-metrics/)  
+>[Mathematical Formula Image from: Dataquest.io](https://www.dataquest.io/blog/understanding-regression-error-metrics/)   
 
 ### MAE Plot
 ![Random Forest MAE plot](demo/randomforest.PNG)  
