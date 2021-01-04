@@ -1,7 +1,4 @@
----
-title: Citation
----
-# Works Cited  
+# Works Cited
   
 - [Machine Learning Mastery - Random Forest](https://machinelearningmastery.com/random-forest-ensemble-in-python/)  
 - [Machine Learning Mastery - Huber Regressor](https://machinelearningmastery.com/robust-regression-for-machine-learning-in-python/#:~:text=Regression%20is%20a%20modeling%20task,most%20successful%20being%20linear%20regression.)  
