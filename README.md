@@ -10,6 +10,8 @@ URL for the Github website (contains the links, pdf, and files needed for this p
 
 **Basic requirements: python 3, requirements.txt, and app.py**  
 
+**Files for Docker: docker_app.py and Dockerfile**  
+
 ### App Demo 
 ![Demo GIF](demo/my-dash-app.gif)  
 
@@ -111,5 +113,7 @@ Check Python version with:
 ```
 python3 -V
 ```  
+
+If there is a bug or mistake, please report it so that I can correct it. Thank you!
 
 **Works Cited:** [Here](Citation.md)
