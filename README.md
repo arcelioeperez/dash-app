@@ -5,6 +5,11 @@ Author: Arcelio E. Perez
 URL for the Heroku app: [click here](https://my-internship-app.herokuapp.com/)  
 URL for the Github website (contains the links, pdf, and files needed for this project): [click here](https://arcelioeperez.github.io/dash-app/)  
 
+**Supported OS: Ubuntu, Windows, MacOS**  
+**Also included: Dockerfile**  
+
+**Basic requirements: python 3, requirements.txt, and app.py**  
+
 ### App Demo 
 ![Demo GIF](demo/my-dash-app.gif)  
 
