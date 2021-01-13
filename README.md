@@ -6,11 +6,10 @@ URL for the Heroku app: [click here](https://my-internship-app.herokuapp.com/)
 URL for the Github website (contains the links, pdf, and files needed for this project): [click here](https://arcelioeperez.github.io/dash-app/)  
 
 **Supported OS: Ubuntu, Windows, MacOS**  
-**Also included: Dockerfile**  
+Also included: Dockerfile  
 
-**Basic requirements: python 3, requirements.txt, and app.py**  
-
-**Files for Docker: docker_app.py and Dockerfile**  
+Basic requirements: python 3, requirements.txt, and app.py   
+Files for Docker: docker_app.py and Dockerfile  - this assumes that you have Docker installed in your computer. If not, refer to [DockerNotes](https://arcelioeperez.github.io/dash-app/DockerNotes) and [Docker.com](https://www.docker.com/).  
 
 ### App Demo 
 ![Demo GIF](demo/my-dash-app.gif)  
