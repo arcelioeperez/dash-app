@@ -114,6 +114,6 @@ Check Python version with:
 python3 -V
 ```  
 
-If there is a bug or mistake, please report it so that I can correct it. Thank you!
+**If there is a bug or mistake, please report it so that I can correct it. Thank you!**  
 
 **Works Cited:** [Here](Citation.md)
