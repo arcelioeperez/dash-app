@@ -7,7 +7,7 @@ title: Home
 
 *\*WEBSITE UNDER CONSTRUCTION*\*
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 **[Heroku](https://my-internship-app.herokuapp.com/) Dash app website**    
  
