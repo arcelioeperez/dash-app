@@ -50,14 +50,14 @@ pip install -r requirements.txt
 View the requirements.txt file here: [view](https://raw.githubusercontent.com/arcelioeperez/dash-app/main/assets/requirements.txt)  
 Download the requirements.txt file here: <a href="/requirements.txt" download>requirements.txt</a>  
 
-*If you want to fork or clone the directory feel free to do so. From the [Github URL](https://arcelioeperez.github.io/dash-app/) there are two download buttons for `.zip` and `.tar.gz` files*   
+If you want to fork or clone the directory feel free to do so. From the [Github URL](https://arcelioeperez.github.io/dash-app/) there are two download buttons for `.zip` and `.tar.gz` files  
 
 Running the `eapp` executable  
 Creating the executable  
 ```
 chmod +x eapp
 ```  
-**The first line of this script is the location of the Python3 interpreter. If you are running Windows you might have a different interpreter. These are [common problems that could happen when running the scripts and their solutions](https://arcelioeperez.github.io/dash-app/Troubleshooting).**   
+The first line of this script is the location of the Python3 interpreter. If you are running Windows you might have a different interpreter. These are [common problems that could happen when running the scripts and their solutions](https://arcelioeperez.github.io/dash-app/Troubleshooting).  
 ```
 #!/usr/bin/env python3
 ```
@@ -87,7 +87,7 @@ M-x shell
 #or - if using a makefile
 M-x compile
 ```  
-**After opening the shell window you just have to type `python3 nameofthefile.py`**   
+After opening the shell window you just have to type `python3 nameofthefile.py`  
 
 Text editors used: VS Code, GNU-Emacs, and VIM.  
 Download GNU-Emacs - MacOS:
