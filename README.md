@@ -12,6 +12,8 @@ Also included: Dockerfile
 Basic requirements: python 3, requirements.txt, and app.py   
 Files for Docker: docker_app.py and Dockerfile  - this assumes that you have Docker installed in your computer. If not, refer to [DockerNotes](https://arcelioeperez.github.io/dash-app/DockerNotes) and [Docker.com](https://www.docker.com/).  
 
+**To know more about this project, please read the [Wiki Page](https://github.com/arcelioeperez/dash-app/wiki).**  
+
 ### App Demo 
 ![Demo GIF](demo/my-dash-app.gif)  
 
