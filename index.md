@@ -5,8 +5,6 @@ title: Home
 
 **Author: Arcelio E. Perez**  
 
-*\*WEBSITE UNDER CONSTRUCTION*\*
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 **[Heroku](https://my-internship-app.herokuapp.com/) Dash app website**    
